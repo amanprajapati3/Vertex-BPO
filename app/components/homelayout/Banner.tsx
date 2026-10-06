@@ -39,7 +39,9 @@ export default function BpoBanner1({
 
           <h1 className="mt-3 text-[40px] font-bold leading-[1] text-white sm:text-[52px] lg:text-[60px]">
             <span className="block">{banner.title.normal}</span>
-            <span className="block text-[#E10600]">{banner.title.highlighted}</span>
+            <span className="block text-[#E10600]">
+              {banner.title.highlighted}
+            </span>
             <span className="block">{banner.title.postTitle}</span>
           </h1>
 
@@ -62,7 +64,7 @@ export default function BpoBanner1({
               <button
                 type="button"
                 onClick={() => setVideoOpen(true)}
-                className="group inline-flex items-center gap-3 text-[13px] md:text-[15px] font-semibold text-white"
+                className="group cursor-pointer inline-flex items-center gap-3 text-[13px] md:text-[15px] font-semibold text-white"
               >
                 <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/70 transition-colors group-hover:border-[#E10600] group-hover:bg-[#E10600]">
                   <Play className="ml-0.5 h-4 w-4 fill-white" aria-hidden />
@@ -73,12 +75,13 @@ export default function BpoBanner1({
           </div>
         </div>
       </div>
-
-      <BpoVideoModal
-        open={videoOpen}
-        url={banner.videoUrl}
-        onClose={() => setVideoOpen(false)}
-      />
+      <div className="z-30">
+        <BpoVideoModal
+          open={videoOpen}
+          url={banner.videoUrl}
+          onClose={() => setVideoOpen(false)}
+        />
+      </div>
     </section>
   );
 }

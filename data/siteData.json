@@ -280,7 +280,7 @@
             "badge": "OUR SERVICES",
             "title": { "normal": "We Provide", "highlighted": "Best Services" },
             "desc": "End-to-end customer support and business process solutions tailored to the way your business works.",
-            "homeVisibleCount": 3,
+            "homeVisibleCount": 4,
             "button": {
               "label": "View More",
               "href": "/services",
