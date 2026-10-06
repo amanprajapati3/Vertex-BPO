@@ -1,0 +1,1936 @@
+{
+  "BpoIndustries": {
+    "templateComponents": {
+      "template-1": {
+        "shared": {
+          "Topbar": "BpoTopbar1",
+          "Header": "BpoHeader1",
+          "Footer": "BpoFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              { "key": "Banner", "component": "BpoBanner1" },
+              { "key": "About", "component": "BpoAbout1" },
+              { "key": "Services", "component": "BpoServices1" },
+              { "key": "Choose", "component": "BpoChoose1" },
+              { "key": "Testimonial", "component": "BpoTestimonial1" },
+              { "key": "Blog", "component": "BpoBlog1" }
+            ]
+          },
+          "about": {
+            "components": [
+              { "key": "PageBanner", "component": "BannerPage" },
+              { "key": "About", "component": "BpoAbout1" },
+              { "key": "Choose", "component": "BpoChoose1" },
+              { "key": "Testimonial", "component": "BpoTestimonial1" }
+            ]
+          },
+          "services": {
+            "components": [
+              { "key": "PageBanner", "component": "BannerPage" },
+              { "key": "Services", "component": "BpoServices1" }
+            ]
+          },
+          "blog": {
+            "components": [
+              { "key": "PageBanner", "component": "BannerPage" },
+              { "key": "Blog", "component": "BpoBlog1" }
+            ]
+          },
+          "faq": {
+            "components": [
+              { "key": "PageBanner", "component": "BannerPage" },
+              { "key": "Faq", "component": "BpoFaq1" }
+            ]
+          },
+          "contact": {
+            "components": [
+              { "key": "PageBanner", "component": "BannerPage" },
+              { "key": "Contact", "component": "BpoContact1" }
+            ]
+          },
+          "quote": {
+            "components": [
+              { "key": "PageBanner", "component": "BannerPage" },
+              { "key": "Quote", "component": "BpoQuote1" }
+            ]
+          },
+          "thank": {
+            "components": [{ "key": "ThankYou", "component": "BpoThankYou1" }]
+          },
+          "terms": {
+            "components": [
+              { "key": "PageBanner", "component": "BannerPage" },
+              { "key": "Legal", "component": "BpoTerms1" }
+            ]
+          },
+          "privacy": {
+            "components": [
+              { "key": "PageBanner", "component": "BannerPage" },
+              { "key": "Legal", "component": "BpoPrivacy1" }
+            ]
+          },
+          "refund-policy": {
+            "components": [
+              { "key": "PageBanner", "component": "BannerPage" },
+              { "key": "Legal", "component": "BpoRefund1" }
+            ]
+          }
+        }
+      }
+    },
+    "sections": {
+      "Topbar": {
+        "variants": {
+          "BpoTopbar1": {
+            "phone": "+91 98765 43210",
+            "phoneHref": "tel:+919876543210",
+            "email": "info@vertexbpo.com",
+            "emailHref": "mailto:info@vertexbpo.com",
+            "socialLinks": [
+              { "label": "facebook", "href": "https://www.facebook.com/" },
+              { "label": "instagram", "href": "https://www.instagram.com/" },
+              { "label": "linkedin", "href": "https://www.linkedin.com/" },
+              { "label": "twitter", "href": "https://twitter.com/" },
+              { "label": "youtube", "href": "https://www.youtube.com/" }
+            ]
+          }
+        }
+      },
+      "Header": {
+        "variants": {
+          "BpoHeader1": {
+            "site": {
+              "siteName": "Vertex BPO",
+              "tagline": "CALL CENTER SOLUTIONS",
+              "logo": {
+                "light": "/logo.png",
+                "normal": "/logo.png",
+                "alt": "Vertex BPO - Call Center Solutions"
+              }
+            },
+            "meta": {
+              "siteTitle": "Vertex BPO | Professional Call Center Services",
+              "siteDescription": "Vertex BPO delivers seamless customer experience with reliable and cost-effective call center solutions: inbound, outbound, live chat and technical support.",
+              "keywords": [
+                "bpo services",
+                "call center services",
+                "inbound call support",
+                "outbound call support",
+                "live chat support",
+                "technical support",
+                "customer service outsourcing",
+                "lead generation",
+                "virtual assistance",
+                "back office support"
+              ]
+            },
+            "nav": [
+              { "label": "Home", "href": "/" },
+              { "label": "About Us", "href": "/about" },
+              {
+                "label": "Services",
+                "href": "/services",
+                "children": [
+                  {
+                    "label": "Inbound Call Support",
+                    "href": "/services/inbound-call-support"
+                  },
+                  {
+                    "label": "Outbound Call Support",
+                    "href": "/services/outbound-call-support"
+                  },
+                  {
+                    "label": "Live Chat Support",
+                    "href": "/services/live-chat-support"
+                  },
+                  {
+                    "label": "Technical Support",
+                    "href": "/services/technical-support"
+                  },
+                  {
+                    "label": "Customer Service",
+                    "href": "/services/customer-service"
+                  },
+                  {
+                    "label": "Lead Generation",
+                    "href": "/services/lead-generation"
+                  },
+                  {
+                    "label": "Virtual Assistance",
+                    "href": "/services/virtual-assistance"
+                  },
+                  {
+                    "label": "Back Office Support",
+                    "href": "/services/back-office-support"
+                  }
+                ]
+              },
+              { "label": "Blog", "href": "/blog" },
+              { "label": "FAQ", "href": "/faq" },
+              { "label": "Contact Us", "href": "/contact" }
+            ],
+            "buttons": [
+              {
+                "label": "Get A Quote",
+                "href": "/quote",
+                "icon": "chevron-right",
+                "variant": "primary"
+              }
+            ],
+            "mobileMenu": {
+              "openLabel": "Open menu",
+              "closeLabel": "Close menu",
+              "viewAllLabel": "View All"
+            }
+          }
+        }
+      },
+      "Banner": {
+        "variants": {
+          "BpoBanner1": {
+            "badge": "PROFESSIONAL CALL CENTER SERVICES",
+            "title": {
+              "normal": "Your Business",
+              "highlighted": "Our Support",
+              "postTitle": "Always On"
+            },
+            "desc": {
+              "plain": "Delivering seamless customer experience with reliable and cost-effective call center solutions.",
+              "parts": [
+                {
+                  "text": "Delivering seamless customer experience with reliable and cost-effective call center solutions."
+                }
+              ]
+            },
+            "buttons": [
+              {
+                "label": "Get Started",
+                "href": "/quote",
+                "icon": "arrow-right",
+                "variant": "primary"
+              },
+              {
+                "label": "Watch Video",
+                "href": "#",
+                "icon": "play",
+                "variant": "outline"
+              }
+            ],
+            "image": {
+              "src": "/bpo/bpo2.jpg",
+              "alt": "Smiling call center agent wearing a headset at a modern workstation"
+            },
+            "videoUrl": "https://www.youtube.com/embed/h4Ue98USW2U"
+          }
+        }
+      },
+      "About": {
+        "variants": {
+          "BpoAbout1": {
+            "badge": "ABOUT US",
+            "title": {
+              "normal": "Your Trusted",
+              "highlighted": "BPO Partner",
+              "postTitle": "for Business Growth"
+            },
+            "paragraphs": [
+              "We are a professional BPO and call center service provider dedicated to helping businesses deliver exceptional customer experiences. With a skilled team, advanced technology, and a customer-first approach, we manage your business processes so you can focus on what matters most \u2014 growth."
+            ],
+            "banner": {
+              "title": "About Us",
+              "home": "Home",
+              "current": "About Us",
+              "bgImage": "/bpo/bpo11.jpg"
+            },
+            "image": {
+              "src": "/bpo/bpo6.jpg",
+              "alt": "Call center agent smiling while working on a computer"
+            },
+            "videoUrl": "https://www.youtube.com/embed/h4Ue98USW2U",
+            "features": [
+              {
+                "id": 1,
+                "icon": "check",
+                "title": "Skilled and experienced call center professionals"
+              },
+              {
+                "id": 2,
+                "icon": "check",
+                "title": "Advanced technology for seamless operations"
+              }
+            ],
+            "button": {
+              "label": "Discover More",
+              "href": "/about",
+              "icon": "arrow-right"
+            },
+            "phoneBlock": {
+              "label": "Call Us On:",
+              "phone": "+91 98765 43210",
+              "phoneHref": "tel:+919876543210"
+            }
+          }
+        }
+      },
+      "Services": {
+        "variants": {
+          "BpoServices1": {
+            "badge": "OUR SERVICES",
+            "title": { "normal": "We Provide", "highlighted": "Best Services" },
+            "desc": "End-to-end customer support and business process solutions tailored to the way your business works.",
+            "homeVisibleCount": 3,
+            "button": {
+              "label": "View More",
+              "href": "/services",
+              "icon": "arrow-right"
+            },
+            "services": [
+              {
+                "id": 1,
+                "slug": "inbound-call-support",
+                "icon": "phone-incoming",
+                "image": "/bpo/bpo7.jpg",
+                "title": "Inbound Call Support",
+                "description": "Handle customer queries, orders and complaints with trained agents available around the clock.",
+                "button": {
+                  "label": "Learn More",
+                  "href": "/services/inbound-call-support"
+                }
+              },
+              {
+                "id": 2,
+                "slug": "outbound-call-support",
+                "icon": "phone-outgoing",
+                "image": "/bpo/bpo8.jpg",
+                "title": "Outbound Call Support",
+                "description": "Proactive calling for follow-ups, surveys, renewals and appointment reminders that keep customers engaged.",
+                "button": {
+                  "label": "Learn More",
+                  "href": "/services/outbound-call-support"
+                }
+              },
+              {
+                "id": 3,
+                "slug": "live-chat-support",
+                "icon": "message-circle",
+                "image": "/bpo/bpo10.jpg",
+                "title": "Live Chat Support",
+                "description": "Real-time chat assistance on your website and apps to resolve questions instantly and boost conversions.",
+                "button": {
+                  "label": "Learn More",
+                  "href": "/services/live-chat-support"
+                }
+              },
+              {
+                "id": 4,
+                "slug": "technical-support",
+                "icon": "headphones",
+                "image": "/bpo/bpo9.jpg",
+                "title": "Technical Support",
+                "description": "Tiered technical help desk that troubleshoots product and software issues with clear, patient guidance.",
+                "button": {
+                  "label": "Learn More",
+                  "href": "/services/technical-support"
+                }
+              },
+              {
+                "id": 5,
+                "slug": "customer-service",
+                "icon": "users",
+                "image": "/bpo/bpo4.jpg",
+                "title": "Customer Service",
+                "description": "Friendly, consistent support across voice, email and chat to build long-term customer loyalty.",
+                "button": {
+                  "label": "Learn More",
+                  "href": "/services/customer-service"
+                }
+              },
+              {
+                "id": 6,
+                "slug": "lead-generation",
+                "icon": "target",
+                "image": "/bpo/bpo5.jpg",
+                "title": "Lead Generation",
+                "description": "Qualified leads sourced and nurtured by trained sales development teams to fill your pipeline.",
+                "button": {
+                  "label": "Learn More",
+                  "href": "/services/lead-generation"
+                }
+              },
+              {
+                "id": 7,
+                "slug": "virtual-assistance",
+                "icon": "user-check",
+                "image": "/bpo/bpo6.jpg",
+                "title": "Virtual Assistance",
+                "description": "Our virtual assistance services help businesses manage their day-to-day tasks efficiently, so they can focus on core operations and growth. We provide skilled and reliable virtual assistants who handle administrative, operational, and customer support tasks with professionalism and accuracy.",
+                "button": {
+                  "label": "Learn More",
+                  "href": "/services/virtual-assistance"
+                }
+              },
+              {
+                "id": 8,
+                "slug": "back-office-support",
+                "icon": "briefcase",
+                "image": "/bpo/bpo2.jpg",
+                "title": "Back Office Support",
+                "description": "Accurate data entry, order processing and document handling that keeps your operations running smoothly.",
+                "button": {
+                  "label": "Learn More",
+                  "href": "/services/back-office-support"
+                }
+              },
+              {
+                "id": 9,
+                "slug": "email-support",
+                "icon": "mail",
+                "image": "/bpo/bpo1.jpg",
+                "title": "Email Support",
+                "description": "Timely, well-written email responses that resolve issues on the first reply and keep your inbox under control.",
+                "button": {
+                  "label": "Learn More",
+                  "href": "/services/email-support"
+                }
+              },
+              {
+                "id": 10,
+                "slug": "order-processing",
+                "icon": "clipboard-list",
+                "image": "/bpo/bpo4.jpg",
+                "title": "Order Processing",
+                "description": "End-to-end order management from entry and verification to tracking and follow-up, handled accurately at any volume.",
+                "button": {
+                  "label": "Learn More",
+                  "href": "/services/order-processing"
+                }
+              },
+              {
+                "id": 11,
+                "slug": "social-media-support",
+                "icon": "share-2",
+                "image": "/bpo/bpo6.jpg",
+                "title": "Social Media Support",
+                "description": "Responsive comment and inbox management across your social channels to protect your brand reputation in public.",
+                "button": {
+                  "label": "Learn More",
+                  "href": "/services/social-media-support"
+                }
+              }
+            ],
+            "banner": {
+              "title": "Our Services",
+              "home": "Home",
+              "current": "Services",
+              "bgImage": "/bpo/bpo1.jpg"
+            },
+            "detailPage": {
+              "banner": {
+                "title": "Service",
+                "highlightedTitle": "Details",
+                "home": "Home",
+                "current": "Service Details",
+                "bgImage": "/bpo/bpo11.jpg"
+              },
+              "sidebar": {
+                "servicesTitle": "Our Services",
+                "services": [
+                  { "label": "Inbound Call Center", "slug": "inbound-call-support" },
+                  { "label": "Outbound Call Center", "slug": "outbound-call-support" },
+                  { "label": "Customer Support", "slug": "customer-service" },
+                  { "label": "Technical Support", "slug": "technical-support" },
+                  { "label": "Virtual Assistance", "slug": "virtual-assistance" },
+                  { "label": "Data Entry Services", "slug": "back-office-support" },
+                  { "label": "BPO Services", "slug": "back-office-support" },
+                  { "label": "Back Office Support", "slug": "back-office-support" }
+                ],
+                "callbackTitle": "Request A Call Back",
+                "callbackFields": [
+                  { "name": "name", "placeholder": "Your name", "type": "text" },
+                  { "name": "email", "placeholder": "Your email", "type": "email" },
+                  { "name": "phone", "placeholder": "Your phone number", "type": "tel" },
+                  { "name": "service", "placeholder": "What service are you interested in?", "type": "text" }
+                ],
+                "callbackMessagePlaceholder": "How can we help?",
+                "callbackButton": "Submit Now"
+              },
+              "content": {
+                "heroImage": "/bpo/bpo9.jpg",
+                "supportHeading": "Dedicated Support For Your Business",
+                "supportDescription": "Our virtual assistants are trained to deliver high-quality work, maintain confidentiality, and adapt to your business processes. Whether you need part-time or full-time support, we provide flexible plans to meet your requirements.",
+                "secondaryImage": "/bpo/bpo11.jpg",
+                "closingDescription": "We work closely with you to understand your goals and provide personalized virtual assistance solutions. Our team ensures timely delivery, clear communication, and consistent support to help your business run smoothly and achieve long-term success."
+              },
+              "services": [
+                {
+                  "slug": "inbound-call-support",
+                  "about": "Our inbound team answers every call with care, resolving questions, taking orders and escalating complex issues so your customers never wait long.",
+                  "features": [
+                    "24/7 call answering",
+                    "Order and booking handling",
+                    "Complaint resolution",
+                    "Multilingual agents"
+                  ],
+                  "benefits": [
+                    "Shorter wait times",
+                    "Higher first-call resolution",
+                    "Consistent brand voice"
+                  ]
+                },
+                {
+                  "slug": "outbound-call-support",
+                  "about": "Outbound campaigns run by trained callers help you reach customers at the right moment with clear, respectful conversations.",
+                  "features": [
+                    "Follow-up and renewal calls",
+                    "Customer surveys",
+                    "Appointment reminders",
+                    "Campaign reporting"
+                  ],
+                  "benefits": [
+                    "Better customer retention",
+                    "Measurable campaign results",
+                    "Lower calling costs"
+                  ]
+                },
+                {
+                  "slug": "live-chat-support",
+                  "about": "Live chat agents handle visitor questions in real time, guiding customers to answers and helping turn interest into sales.",
+                  "features": [
+                    "Website and app chat",
+                    "Fast response handling",
+                    "Chat transcripts and tagging",
+                    "Smooth hand-off to your team"
+                  ],
+                  "benefits": [
+                    "Faster answers",
+                    "More completed purchases",
+                    "Support at lower cost per contact"
+                  ]
+                },
+                {
+                  "slug": "technical-support",
+                  "about": "A tiered help desk troubleshoots product and software issues step by step, documenting every case for your engineers.",
+                  "features": [
+                    "Tier 1 and Tier 2 troubleshooting",
+                    "Remote guidance",
+                    "Ticket management",
+                    "Knowledge base upkeep"
+                  ],
+                  "benefits": [
+                    "Fewer repeat tickets",
+                    "Happier customers",
+                    "Engineers freed for product work"
+                  ]
+                },
+                {
+                  "slug": "customer-service",
+                  "about": "Omnichannel customer service across voice, email and chat keeps every conversation friendly, accurate and on brand.",
+                  "features": [
+                    "Voice, email and chat",
+                    "Account and billing queries",
+                    "Returns and refunds",
+                    "Quality monitoring"
+                  ],
+                  "benefits": [
+                    "Improved satisfaction scores",
+                    "Consistent service quality",
+                    "Scalable team size"
+                  ]
+                },
+                {
+                  "slug": "lead-generation",
+                  "about": "We research, contact and qualify prospects so your sales team spends its time on conversations that are ready to move forward.",
+                  "features": [
+                    "Prospect research",
+                    "Cold calling and email outreach",
+                    "Lead qualification",
+                    "Appointment setting"
+                  ],
+                  "benefits": [
+                    "A fuller sales pipeline",
+                    "Higher quality leads",
+                    "Transparent lead reporting"
+                  ]
+                },
+                {
+                  "slug": "virtual-assistance",
+                  "about": "Virtual assistants can take care of time-consuming tasks, improve productivity, and ensure smooth business operations. Our team works as an extension of your business, offering flexible support tailored to your specific needs.",
+                  "features": [
+                    "Manage emails, calendars, and appointments",
+                    "Data entry, research, and documentation support",
+                    "Customer support and client communication",
+                    "Social media management and content scheduling",
+                    "Cost-effective and scalable support solutions"
+                  ],
+                  "benefits": [
+                    "More time for core work",
+                    "Flexible hours",
+                    "No hiring overhead"
+                  ]
+                },
+                {
+                  "slug": "back-office-support",
+                  "about": "Reliable back office teams process data, orders and documents accurately and on schedule behind the scenes.",
+                  "features": [
+                    "Data entry and cleansing",
+                    "Order processing",
+                    "Document management",
+                    "Invoice and records handling"
+                  ],
+                  "benefits": [
+                    "Fewer errors",
+                    "Faster turnaround",
+                    "Lower operating costs"
+                  ]
+                },
+                {
+                  "slug": "email-support",
+                  "about": "Dedicated email agents reply to every customer message with clear, on-brand answers and follow issues through to resolution.",
+                  "features": [
+                    "First-reply resolution",
+                    "Ticket tagging and routing",
+                    "Canned response libraries",
+                    "SLA-based response times"
+                  ],
+                  "benefits": [
+                    "A managed, zero inbox",
+                    "Consistent reply quality",
+                    "Written record of every case"
+                  ]
+                },
+                {
+                  "slug": "order-processing",
+                  "about": "Trained operators take orders, verify details and manage changes and tracking so every order moves smoothly from entry to delivery.",
+                  "features": [
+                    "Order entry and verification",
+                    "Payment and fraud checks",
+                    "Tracking and status updates",
+                    "Returns and exchange handling"
+                  ],
+                  "benefits": [
+                    "Fewer order errors",
+                    "Faster fulfillment",
+                    "Happier repeat customers"
+                  ]
+                },
+                {
+                  "slug": "social-media-support",
+                  "about": "Agents monitor your comments, mentions and direct messages, answering quickly and escalating sensitive issues to your team.",
+                  "features": [
+                    "Comment and DM responses",
+                    "Escalation of sensitive cases",
+                    "Daily engagement reporting",
+                    "Brand voice guidelines"
+                  ],
+                  "benefits": [
+                    "Faster public response",
+                    "Protected brand reputation",
+                    "Consistent engagement"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Work": {
+        "variants": {
+          "BpoChoose1": {
+            "badge": "WHO WE WORK WITH",
+            "badgeIcon": "users",
+            "title": {
+              "normal": "We Communicate To Get Your Business to The",
+              "highlighted": "Next Level"
+            },
+            "desc": "We work with businesses of all sizes across various industries, helping them deliver seamless customer experiences through reliable and efficient call center support.",
+            "features": [
+              {
+                "id": 1,
+                "icon": "check",
+                "title": "Dedicated Support For Every Business"
+              },
+              {
+                "id": 2,
+                "icon": "check",
+                "title": "Experienced Call Center Team"
+              },
+              {
+                "id": 3,
+                "icon": "check",
+                "title": "Customized Solutions As Per Your Needs"
+              },
+              {
+                "id": 4,
+                "icon": "check",
+                "title": "Focus On Customer Satisfaction"
+              }
+            ],
+            "stats": [
+              {
+                "id": 1,
+                "icon": "award",
+                "number": 10,
+                "suffix": "+",
+                "label": "Years of Experience"
+              },
+              {
+                "id": 2,
+                "icon": "phone-call",
+                "number": 500,
+                "suffix": "+",
+                "label": "Calls Per Day"
+              }
+            ],
+            "image": {
+              "src": "/bpo/bpo9.jpg",
+              "alt": "Team of call center agents working side by side with headsets"
+            },
+            "floatingCard": {
+              "title": "Looking for a Custom Solution?",
+              "button": {
+                "label": "Get Started",
+                "href": "/quote",
+                "icon": "arrow-right"
+              }
+            }
+          }
+        }
+      },
+      "Choose": {
+        "variants": {
+          "BpoChoose1": {
+            "badge": "WHY CHOOSE US",
+            "badgeIcon": "",
+            "title": {
+              "normal": "We Are Focused On Making Your",
+              "highlighted": "Process A Success"
+            },
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo.",
+            "features": [
+              {
+                "id": 1,
+                "percentage": 92,
+                "title": "We Have The Answers To Your Business Process Questions",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+              },
+              {
+                "id": 2,
+                "percentage": 94,
+                "title": "Call Center Is The Solution To Your Outsourcing Issues",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+              }
+            ],
+            "image": {
+              "src": "/bpo/bpo9.jpg",
+              "alt": "Team of call center agents working side by side with headsets"
+            },
+            "button": {
+              "label": "Start Consultation",
+              "href": "/consultation",
+              "icon": "arrow-right"
+            }
+          }
+        }
+      },
+      "Testimonial": {
+        "variants": {
+          "BpoTestimonial1": {
+            "badge": "TESTIMONIALS",
+            "title": {
+              "normal": "What",
+              "highlighted": "Our Clients",
+              "postTitle": "Say About Us"
+            },
+            "desc": "We take pride in building long-term relationships with our clients by delivering reliable and high-quality BPO and call center services.",
+            "banner": {
+              "title": "Testimonials",
+              "home": "Home",
+              "current": "Testimonials",
+              "bgImage": "/bpo/bpo1.jpg"
+            },
+            "testimonialItems": [
+              {
+                "id": 1,
+                "name": "Rajesh Mehta",
+                "designation": "Operations Manager,",
+                "company": "E-Commerce Company",
+                "image": "/people/man1.png",
+                "rating": 5,
+                "quote": "Their call center support has significantly improved our customer satisfaction. The team is professional, well-trained and always available to support our business needs."
+              },
+              {
+                "id": 2,
+                "name": "Priya Sharma",
+                "designation": "Director,",
+                "company": "Healthcare Brand",
+                "image": "/people/women1.png",
+                "rating": 5,
+                "quote": "Excellent service and great communication. Their team handles our customer queries efficiently and helps us focus on growing our core business."
+              },
+              {
+                "id": 3,
+                "name": "Amit Verma",
+                "designation": "CEO,",
+                "company": "SaaS Company",
+                "image": "/people/men2.png",
+                "rating": 5,
+                "quote": "A reliable and dedicated team. They have helped us streamline our customer support operations and deliver a better experience to our clients."
+              },
+              {
+                "id": 4,
+                "name": "Sneha Iyer",
+                "designation": "Head of Customer Success,",
+                "company": "FinTech Startup",
+                "image": "/people/women2.png",
+                "rating": 5,
+                "quote": "They ramped up a full support team for us in under three weeks. Response times dropped by half and our CSAT scores have stayed above 90% ever since."
+              },
+              {
+                "id": 5,
+                "name": "Vikram Singh",
+                "designation": "Founder,",
+                "company": "D2C Retail Brand",
+                "image": "/people/men3.png",
+                "rating": 5,
+                "quote": "During festive-season peaks they scaled from four agents to twenty without any drop in quality. Outsourcing our support was easily our best decision this year."
+              },
+              {
+                "id": 6,
+                "name": "Ananya Reddy",
+                "designation": "Marketing Director,",
+                "company": "Real Estate Group",
+                "image": "/people/women3.png",
+                "rating": 5,
+                "quote": "Their outbound team books qualified appointments for our sales crew every single day. Reporting is transparent and the account managers are always reachable."
+              },
+              {
+                "id": 7,
+                "name": "Karan Malhotra",
+                "designation": "VP of Operations,",
+                "company": "Logistics Company",
+                "image": "/people/men4.png",
+                "rating": 5,
+                "quote": "Back-office processing that used to take our internal team days is now turned around overnight. Accuracy has improved and our costs are significantly lower."
+              },
+              {
+                "id": 8,
+                "name": "Meera Nair",
+                "designation": "Product Manager,",
+                "company": "Healthcare Platform",
+                "image": "/people/women4.png",
+                "rating": 5,
+                "quote": "The live chat agents sound exactly like an extension of our own team. Customers get answers in seconds and conversions on our pricing page clearly improved."
+              },
+              {
+                "id": 9,
+                "name": "Arjun Kapoor",
+                "designation": "Co-Founder,",
+                "company": "Ed-Tech Company",
+                "image": "/people/men5.png",
+                "rating": 5,
+                "quote": "Clear communication, disciplined processes and genuine ownership of our KPIs. They treat our learners' questions with the same care that we do."
+              }
+            ],
+            "carousel": {
+              "hasArrows": true,
+              "hasDots": true,
+              "activeDot": 1,
+              "totalDots": 3,
+              "gap": 24
+            }
+          }
+        }
+      },
+      "Blog": {
+        "variants": {
+          "BpoBlog1": {
+            "badge": "OUR BLOG",
+            "title": {
+              "normal": "Latest Insights &",
+              "highlighted": "Updates"
+            },
+            "desc": "Stay informed with the latest trends, tips, and insights from the call center industry to help your business grow and deliver better customer experiences.",
+            "homeVisibleCount": 2,
+            "postsPerPage": 4,
+            "posts": [
+              {
+                "id": 1,
+                "slug": "top-call-deflection-strategies-for-the-contact-center",
+                "image": "/bpo/bpo1.jpg",
+                "category": "CALL CENTER",
+                "date": "25 Sep 2026",
+                "author": "Admin",
+                "title": "Top Call Deflection Strategies for the Contact Center",
+                "description": "Discover proven call deflection strategies to reduce call volume, improve self-service and enhance customer satisfaction in your contact center.",
+                "readMoreText": "Read More"
+              },
+              {
+                "id": 2,
+                "slug": "7-powerful-customer-experience-statistics-to-know-in-2025",
+                "image": "/bpo/bpo4.jpg",
+                "category": "CUSTOMER EXPERIENCE",
+                "date": "22 Sep 2026",
+                "author": "Admin",
+                "title": "7 Powerful Customer Experience Statistics to Know in 2025",
+                "description": "Explore the latest customer experience statistics for 2025 and learn how businesses can improve customer satisfaction and build long-term loyalty.",
+                "readMoreText": "Read More"
+              },
+              {
+                "id": 3,
+                "slug": "benefits-of-outsourcing-customer-support",
+                "image": "/bpo/bpo2.jpg",
+                "category": "OUTSOURCING",
+                "date": "18 Sep 2026",
+                "author": "Admin",
+                "title": "5 Benefits of Outsourcing Customer Support",
+                "description": "Learn how outsourcing customer support cuts operating costs, extends coverage to 24/7 and gives your in-house team room to focus on growth.",
+                "readMoreText": "Read More"
+              },
+              {
+                "id": 4,
+                "slug": "how-lead-generation-drives-sales-growth",
+                "image": "/bpo/bpo6.jpg",
+                "category": "LEAD GENERATION",
+                "date": "15 Sep 2026",
+                "author": "Admin",
+                "title": "How Lead Generation Drives Consistent Sales Growth",
+                "description": "A steady flow of qualified leads is the foundation of predictable revenue. See how structured outreach keeps your pipeline full month after month.",
+                "readMoreText": "Read More"
+              },
+              {
+                "id": 5,
+                "slug": "tasks-you-can-delegate-to-a-virtual-assistant",
+                "image": "/bpo/bpo11.jpg",
+                "category": "VIRTUAL ASSISTANCE",
+                "date": "25 Sep 2026",
+                "author": "Admin",
+                "title": "Top 8 Virtual Assistant Tasks That Can Save Your Business Time and Money",
+                "description": "In today's fast-paced business environment, virtual assistants can take routine work off your plate and help you focus on business growth.",
+                "readMoreText": "Read More"
+              },
+              {
+                "id": 6,
+                "slug": "omnichannel-support-a-simple-guide",
+                "image": "/bpo/bpo10.jpg",
+                "category": "CUSTOMER EXPERIENCE",
+                "date": "08 Sep 2026",
+                "author": "Admin",
+                "title": "Omnichannel Support: A Simple Guide for Small Business",
+                "description": "Customers expect to move between phone, chat and email without repeating themselves. Here is how small businesses can offer seamless omnichannel support.",
+                "readMoreText": "Read More"
+              },
+              {
+                "id": 7,
+                "slug": "how-to-reduce-customer-churn",
+                "image": "/bpo/bpo4.jpg",
+                "category": "RETENTION",
+                "date": "05 Sep 2026",
+                "author": "Admin",
+                "title": "How to Reduce Customer Churn With Better Support",
+                "description": "Support is your strongest retention tool. Learn how faster resolutions, proactive outreach and consistent follow-up keep customers from leaving.",
+                "readMoreText": "Read More"
+              },
+              {
+                "id": 8,
+                "slug": "outbound-calling-best-practices",
+                "image": "/bpo/bpo5.jpg",
+                "category": "OUTBOUND",
+                "date": "02 Sep 2026",
+                "author": "Admin",
+                "title": "Outbound Calling Best Practices That Get Results",
+                "description": "From timing your calls to opening with a clear reason, these outbound calling practices lift connect rates and keep conversations productive.",
+                "readMoreText": "Read More"
+              },
+              {
+                "id": 9,
+                "slug": "why-24-7-support-matters-for-e-commerce",
+                "image": "/bpo/bpo7.jpg",
+                "category": "E-COMMERCE",
+                "date": "29 Aug 2026",
+                "author": "Admin",
+                "title": "Why 24/7 Support Matters for E-Commerce Brands",
+                "description": "Shoppers do not keep office hours. Round-the-clock support recovers abandoned carts, answers pre-purchase questions and builds trust across time zones.",
+                "readMoreText": "Read More"
+              },
+              {
+                "id": 10,
+                "slug": "improving-first-call-resolution-rates",
+                "image": "/bpo/bpo9.jpg",
+                "category": "CALL CENTER",
+                "date": "26 Aug 2026",
+                "author": "Admin",
+                "title": "Improving First-Call Resolution Rates in 5 Steps",
+                "description": "Higher first-call resolution means fewer callbacks and happier customers. Follow these five steps to help your agents solve issues on the first try.",
+                "readMoreText": "Read More"
+              },
+              {
+                "id": 11,
+                "slug": "data-entry-services-every-business-should-outsource",
+                "image": "/bpo/bpo1.jpg",
+                "category": "BACK OFFICE",
+                "date": "22 Aug 2026",
+                "author": "Admin",
+                "title": "Data Entry Services Every Business Should Outsource",
+                "description": "Accurate data drives every decision. See which data entry tasks are safest and smartest to hand off to a trained back office team.",
+                "readMoreText": "Read More"
+              },
+              {
+                "id": 12,
+                "slug": "how-ai-is-shaping-the-future-of-call-centers",
+                "image": "/bpo/bpo4.jpg",
+                "category": "TECHNOLOGY",
+                "date": "18 Aug 2026",
+                "author": "Admin",
+                "title": "How AI Is Shaping the Future of Call Centers",
+                "description": "AI is handling routine questions and equipping agents with real-time guidance. Explore how call centers are putting it to work without losing the human touch.",
+                "readMoreText": "Read More"
+              }
+            ],
+            "banner": {
+              "title": "Blog",
+              "home": "Home",
+              "current": "Blog",
+              "bgImage": "/bpo/bpo1.jpg"
+            },
+            "detailPage": {
+              "banner": {
+                "title": "Blog",
+                "highlightedTitle": "Details",
+                "home": "Home",
+                "current": "Blog Details",
+                "bgImage": "/bpo/bpo11.jpg"
+              },
+              "inlineImage": "/bpo/bpo3.jpg",
+              "sidebar": {
+                "searchTitle": "Search Blog",
+                "searchPlaceholder": "Search articles, tips, or topics...",
+                "categoriesTitle": "Categories",
+                "recentTitle": "Recent Posts",
+                "promoTitle": "Have Any Question?",
+                "promoDescription": "Our team is here to help with any questions you may have about our services.",
+                "categories": [
+                  "Call Center",
+                  "Customer Experience",
+                  "Virtual Assistance",
+                  "Productivity Tips",
+                  "Industry Trends",
+                  "Business Growth"
+                ]
+              },
+              "articles": [
+                {
+                  "slug": "top-call-deflection-strategies-for-the-contact-center",
+                  "author": "Admin",
+                  "authorRole": "Vertex BPO Editorial Team",
+                  "readTime": "6 Min Read",
+                  "quote": "The best call is the one your customer never needs to make because they found the answer themselves.",
+                  "intro": "Call deflection moves routine questions to faster channels so agents can focus on the conversations that need a human touch. Done well, it lowers cost and improves the customer experience at the same time.",
+                  "sections": [
+                    {
+                      "title": "Build a self-service knowledge base",
+                      "text": "Publish clear, searchable answers to your most common questions. Review contact reasons every month and turn the top repeat issues into short help articles."
+                    },
+                    {
+                      "title": "Offer proactive notifications",
+                      "text": "Send order, delivery and appointment updates before customers ask. Proactive messages remove a large share of status-check calls."
+                    },
+                    {
+                      "title": "Use chat and IVR wisely",
+                      "text": "Route simple requests to chat or a well-designed IVR, and always give customers an easy path to a live agent when the issue is complex."
+                    }
+                  ],
+                  "highlights": [
+                    "Self-service content",
+                    "Proactive updates",
+                    "Smart routing",
+                    "Easy agent hand-off"
+                  ],
+                  "closing": "Start by finding your top five contact reasons, then deflect them one at a time while tracking customer satisfaction."
+                },
+                {
+                  "slug": "7-powerful-customer-experience-statistics-to-know-in-2025",
+                  "author": "Admin",
+                  "authorRole": "Vertex BPO Editorial Team",
+                  "readTime": "5 Min Read",
+                  "quote": "Customers remember how quickly and kindly their problem was solved.",
+                  "intro": "Customer experience continues to shape loyalty and growth. Looking at how customers behave today helps teams decide where to invest in support, training and technology.",
+                  "sections": [
+                    {
+                      "title": "Speed still matters",
+                      "text": "Customers expect quick, accurate answers. Reducing response time and first-contact resolution gaps is one of the most effective improvements a support team can make."
+                    },
+                    {
+                      "title": "Channel choice is expected",
+                      "text": "People want to switch between phone, chat and email without repeating themselves. Connected conversation history makes that possible."
+                    },
+                    {
+                      "title": "Human help is still valued",
+                      "text": "Automation handles simple tasks well, but customers still want skilled people for sensitive or complex problems."
+                    }
+                  ],
+                  "highlights": [
+                    "Fast response",
+                    "Omnichannel support",
+                    "Skilled agents",
+                    "Consistent follow-up"
+                  ],
+                  "closing": "Use these trends as a checklist and measure your own customer data against them to find your biggest opportunities."
+                },
+                {
+                  "slug": "benefits-of-outsourcing-customer-support",
+                  "author": "Admin",
+                  "authorRole": "Vertex BPO Editorial Team",
+                  "readTime": "6 Min Read",
+                  "quote": "Outsourcing support is not about handing work away; it is about giving customers a faster answer.",
+                  "intro": "Outsourcing customer support lets you offer longer coverage and specialist agents without the cost of building an in-house team for every shift and channel.",
+                  "sections": [
+                    {
+                      "title": "Lower and more predictable costs",
+                      "text": "An outsourced team replaces recruiting, training and infrastructure overhead with a simple per-agent or per-contact fee you can budget for."
+                    },
+                    {
+                      "title": "Coverage around the clock",
+                      "text": "Shared teams across time zones keep your phones and chats covered nights, weekends and holidays, so customers are never left waiting."
+                    },
+                    {
+                      "title": "Room to scale up and down",
+                      "text": "Add agents for seasonal peaks and step back after them without layoffs, keeping service levels steady through demand changes."
+                    }
+                  ],
+                  "highlights": [
+                    "Reduced operating costs",
+                    "24/7 availability",
+                    "Easy scaling",
+                    "Access to trained agents"
+                  ],
+                  "closing": "Start with one channel, set clear quality targets and review results monthly so the outsourced team feels like an extension of your own."
+                },
+                {
+                  "slug": "how-lead-generation-drives-sales-growth",
+                  "author": "Admin",
+                  "authorRole": "Vertex BPO Editorial Team",
+                  "readTime": "5 Min Read",
+                  "quote": "A sales team can only be as strong as the list of prospects it is given.",
+                  "intro": "Consistent revenue depends on a pipeline that is always being refilled. Structured lead generation keeps qualified opportunities flowing so forecasting becomes reliable.",
+                  "sections": [
+                    {
+                      "title": "Define your ideal customer first",
+                      "text": "Clear firmographic and behavioral criteria keep outreach focused on accounts that actually fit your offer, improving conversion at every stage."
+                    },
+                    {
+                      "title": "Combine cold calling and email outreach",
+                      "text": "Multi-touch sequences reach prospects on their preferred channel. Calls build trust while emails keep your message easy to revisit."
+                    },
+                    {
+                      "title": "Qualify before handing over",
+                      "text": "Scoring and vetting every lead means your sales reps spend their time on conversations that are ready to move forward."
+                    }
+                  ],
+                  "highlights": [
+                    "Steady pipeline",
+                    "Higher quality leads",
+                    "Shorter sales cycles",
+                    "Transparent reporting"
+                  ],
+                  "closing": "Pick one target segment, build a short outreach sequence and measure qualified meetings per week to see if the pipeline is truly growing."
+                },
+                {
+                  "slug": "tasks-you-can-delegate-to-a-virtual-assistant",
+                  "author": "Admin",
+                  "authorRole": "Vertex BPO Editorial Team",
+                  "readTime": "5 Min Read",
+                  "quote": "If a task repeats and does not need your judgment, it belongs on someone else's desk.",
+                  "intro": "In today's fast-paced business environment, time is one of the most valuable resources. Entrepreneurs and businesses are constantly looking for ways to streamline operations, reduce costs, and improve productivity. This is where virtual assistants (VAs) come in. Virtual assistants can handle a wide range of tasks, allowing you to focus on core business activities and strategic growth.",
+                  "sections": [
+                    {
+                      "title": "Manage Emails and Communication",
+                      "text": "Virtual assistants can efficiently manage your inbox, filter important emails, respond to routine inquiries, and ensure you never miss an important message. This helps you stay organized and maintain professional communication with clients, partners, and team members."
+                    },
+                    {
+                      "title": "Schedule Appointments and Manage Calendars",
+                      "text": "Keeping track of meetings, appointments, and deadlines can be time-consuming. A virtual assistant can manage your calendar, schedule meetings, send reminders, and coordinate with team members to ensure your day runs smoothly."
+                    },
+                    {
+                      "title": "Handle Data Entry and Documentation",
+                      "text": "Data entry, research, and document preparation are essential but repetitive tasks. Virtual assistants can handle these efficiently, freeing up your time for more important work while ensuring accuracy and organization."
+                    },
+                    {
+                      "title": "Provide Customer Support",
+                      "text": "Virtual assistants can respond to customer inquiries, resolve basic issues, and maintain positive communication, helping you deliver a better customer experience without increasing operational costs."
+                    }
+                  ],
+                  "highlights": [
+                    "More focused hours",
+                    "No hiring overhead",
+                    "Flexible coverage",
+                    "Consistent routines"
+                  ],
+                  "closing": "Track everything you do for one week, circle the repeatable tasks and hand the first three to a virtual assistant."
+                },
+                {
+                  "slug": "omnichannel-support-a-simple-guide",
+                  "author": "Admin",
+                  "authorRole": "Vertex BPO Editorial Team",
+                  "readTime": "6 Min Read",
+                  "quote": "Customers do not think in channels; they think in conversations.",
+                  "intro": "Omnichannel support connects phone, chat, email and social into one continuous conversation, so customers never have to repeat themselves.",
+                  "sections": [
+                    {
+                      "title": "One history for every channel",
+                      "text": "Storing all past interactions in a single view lets agents pick up exactly where the last conversation ended, on any channel."
+                    },
+                    {
+                      "title": "Route each channel with intent",
+                      "text": "Simple questions go to self-service or chat, while complex issues reach a specialist quickly with full context attached."
+                    },
+                    {
+                      "title": "Measure the whole journey",
+                      "text": "Track resolution time and satisfaction across channels instead of one at a time to spot the gaps customers actually feel."
+                    }
+                  ],
+                  "highlights": [
+                    "No repeated details",
+                    "Faster resolution",
+                    "Consistent answers",
+                    "Full conversation context"
+                  ],
+                  "closing": "Connect your two highest-volume channels first and share one customer history between them before expanding to the rest."
+                },
+                {
+                  "slug": "how-to-reduce-customer-churn",
+                  "author": "Admin",
+                  "authorRole": "Vertex BPO Editorial Team",
+                  "readTime": "5 Min Read",
+                  "quote": "It costs far more to win a new customer than to keep an existing one.",
+                  "intro": "Churn rarely comes from one big failure; it builds from small, unresolved moments. Strong support habits catch those moments before customers walk away.",
+                  "sections": [
+                    {
+                      "title": "Spot at-risk customers early",
+                      "text": "Track repeat contacts, drops in usage and negative feedback so you can reach out before a dissatisfied customer cancels."
+                    },
+                    {
+                      "title": "Resolve issues on first contact",
+                      "text": "Give agents the context and authority to solve problems in one conversation instead of transferring customers between departments."
+                    },
+                    {
+                      "title": "Follow up after every fix",
+                      "text": "A short check-in after a resolved issue shows customers you care about the outcome, not just closing the ticket."
+                    }
+                  ],
+                  "highlights": [
+                    "Early risk signals",
+                    "First-contact resolution",
+                    "Consistent follow-up",
+                    "Proactive outreach"
+                  ],
+                  "closing": "Pick your top churn trigger, build a playbook around it and review retention numbers monthly to see the impact."
+                },
+                {
+                  "slug": "outbound-calling-best-practices",
+                  "author": "Admin",
+                  "authorRole": "Vertex BPO Editorial Team",
+                  "readTime": "6 Min Read",
+                  "quote": "Every outbound call should be worth the customer's time.",
+                  "intro": "Outbound calling works when it feels like a helpful conversation rather than an interruption. Preparation and timing make the difference between a hang-up and a yes.",
+                  "sections": [
+                    {
+                      "title": "Prepare before you dial",
+                      "text": "Review the account history and goal of every call so the conversation starts with context instead of a script the prospect can spot instantly."
+                    },
+                    {
+                      "title": "Open with a clear reason",
+                      "text": "State who you are and why you are calling in the first sentence. Respectful clarity earns permission to continue."
+                    },
+                    {
+                      "title": "Listen more than you talk",
+                      "text": "Let the customer describe their situation first, then match your offer to what they actually said. Notes from listening win more appointments."
+                    }
+                  ],
+                  "highlights": [
+                    "Better connect rates",
+                    "Clear call openings",
+                    "Active listening",
+                    "Timely follow-up"
+                  ],
+                  "closing": "Record a few calls, review the openings and tighten your first two sentences before the next campaign starts."
+                },
+                {
+                  "slug": "why-24-7-support-matters-for-e-commerce",
+                  "author": "Admin",
+                  "authorRole": "Vertex BPO Editorial Team",
+                  "readTime": "5 Min Read",
+                  "quote": "Shoppers do not keep office hours.",
+                  "intro": "E-commerce sells around the clock, but many brands still answer only during business hours. That gap is where carts are abandoned and trust is lost.",
+                  "sections": [
+                    {
+                      "title": "Answer questions at checkout time",
+                      "text": "A quick answer about sizing, shipping or returns while the customer is deciding is often the difference between a sale and an abandoned cart."
+                    },
+                    {
+                      "title": "Handle order issues before they escalate",
+                      "text": "Addressing delivery problems immediately, even overnight, prevents chargebacks and public complaints later."
+                    },
+                    {
+                      "title": "Cover peaks and time zones",
+                      "text": "Launches, flash sales and international customers create demand spikes that a shared 24/7 team absorbs without overtime costs."
+                    }
+                  ],
+                  "highlights": [
+                    "Carts recovered",
+                    "Instant answers",
+                    "Global coverage",
+                    "Fewer chargebacks"
+                  ],
+                  "closing": "Start by covering your two busiest shopping windows outside business hours and measure cart recovery from there."
+                },
+                {
+                  "slug": "improving-first-call-resolution-rates",
+                  "author": "Admin",
+                  "authorRole": "Vertex BPO Editorial Team",
+                  "readTime": "6 Min Read",
+                  "quote": "The best call is the one that never needs a callback.",
+                  "intro": "First-call resolution is the clearest signal of a healthy support team. When customers get a complete answer the first time, satisfaction and costs both improve.",
+                  "sections": [
+                    {
+                      "title": "Give agents full context",
+                      "text": "Order history, previous tickets and account details should be visible the moment the call connects, so nothing has to be repeated."
+                    },
+                    {
+                      "title": "Empower agents to solve",
+                      "text": "Clear refund, replacement and escalation limits let agents finish the conversation instead of promising a callback from someone else."
+                    },
+                    {
+                      "title": "Review failed calls weekly",
+                      "text": "Calls that ended in a transfer or callback reveal process gaps. Fix the top reason each week and watch the rate climb."
+                    }
+                  ],
+                  "highlights": [
+                    "Full customer history",
+                    "Agent authority",
+                    "Weekly call reviews",
+                    "Clear escalation paths"
+                  ],
+                  "closing": "Measure your current rate first, then attack the single biggest reason for callbacks in your queue."
+                },
+                {
+                  "slug": "data-entry-services-every-business-should-outsource",
+                  "author": "Admin",
+                  "authorRole": "Vertex BPO Editorial Team",
+                  "readTime": "5 Min Read",
+                  "quote": "Clean data is the fuel every other process runs on.",
+                  "intro": "Data entry is precise, repetitive and slow when done in-house. Outsourcing it keeps records accurate while freeing your team for work that needs their attention.",
+                  "sections": [
+                    {
+                      "title": "Digitize paper records",
+                      "text": "Converting forms, invoices and contracts into structured digital records makes information searchable and safe from loss."
+                    },
+                    {
+                      "title": "Keep CRM data accurate",
+                      "text": "Regular updates, corrections and enrichment ensure your sales and support teams always work from current information."
+                    },
+                    {
+                      "title": "Validate and deduplicate",
+                      "text": "Standard checks remove duplicates and formatting errors before they poison reports and outreach lists."
+                    }
+                  ],
+                  "highlights": [
+                    "Fewer manual errors",
+                    "Faster turnaround",
+                    "Scalable capacity",
+                    "Secure handling"
+                  ],
+                  "closing": "Choose one dataset that causes the most rework, move it to a trained team and compare error rates after a month."
+                },
+                {
+                  "slug": "how-ai-is-shaping-the-future-of-call-centers",
+                  "author": "Admin",
+                  "authorRole": "Vertex BPO Editorial Team",
+                  "readTime": "6 Min Read",
+                  "quote": "AI will not replace agents; it will give them better tools.",
+                  "intro": "Artificial intelligence is absorbing routine contacts and handing agents sharper answers in real time, without removing the empathy customers still expect from people.",
+                  "sections": [
+                    {
+                      "title": "AI handles routine questions",
+                      "text": "Virtual agents and IVR resolve balance checks, order status and FAQs instantly, freeing human agents for complex conversations."
+                    },
+                    {
+                      "title": "Agents get real-time assist",
+                      "text": "Suggested replies and knowledge lookups during a call shorten handle time and help newer agents sound like veterans."
+                    },
+                    {
+                      "title": "Insight from every conversation",
+                      "text": "Analytics across calls surface recurring issues and sentiment shifts that used to hide inside manual sample reviews."
+                    }
+                  ],
+                  "highlights": [
+                    "Faster self-service",
+                    "Real-time guidance",
+                    "Conversation analytics",
+                    "Lower handle times"
+                  ],
+                  "closing": "Automate one high-volume, low-complexity contact type first and keep a clear line to a human for everything else."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Faq": {
+        "variants": {
+          "BpoFaq1": {
+            "banner": {
+              "title": "Frequiently Asked Questions",
+              "home": "Home",
+              "current": "FAQs",
+              "bgImage": "/bpo/bpo11.jpg"
+            },
+            "badge": "FAQS",
+            "title": {
+              "normal": "Frequently Asked",
+              "highlighted": "Questions"
+            },
+            "desc": "Find answers to common questions about our call center services, processes, and how we can support your business.",
+            "faqs": [
+              {
+                "id": 1,
+                "number": "01",
+                "question": "What call center services do you offer?",
+                "answer": "We offer inbound call support, outbound call support, live chat support, technical support, customer service, lead generation, virtual assistance and back office support tailored to your business needs."
+              },
+              {
+                "id": 2,
+                "number": "02",
+                "question": "How can a call center help my business?",
+                "answer": "A professional call center improves customer retention, handles high call volumes efficiently, provides 24/7 availability, and allows your in-house team to focus on core business growth."
+              },
+              {
+                "id": 3,
+                "number": "03",
+                "question": "What industries do you serve?",
+                "answer": "We serve a wide variety of industries including e-commerce, healthcare, finance, tech, telecommunications, travel, and retail."
+              },
+              {
+                "id": 4,
+                "number": "04",
+                "question": "Is your call center available 24/7?",
+                "answer": "Yes, we offer flexible staffing models including round-the-clock 24/7 support to ensure your customers are assisted at any time of day."
+              },
+              {
+                "id": 5,
+                "number": "05",
+                "question": "Do you provide multilingual support?",
+                "answer": "Yes, our agents are fluent in multiple languages to help you cater to a global customer base seamlessly."
+              },
+              {
+                "id": 6,
+                "number": "06",
+                "question": "How do you ensure data security and customer privacy?",
+                "answer": "We maintain strict compliance standards, secure encrypted data transmission, role-based access controls, and NDA agreements for all agents."
+              },
+              {
+                "id": 7,
+                "number": "07",
+                "question": "What is the onboarding process?",
+                "answer": "Our onboarding process involves requirement analysis, script preparation, agent training, system integration, and trial runs before full deployment."
+              },
+              {
+                "id": 8,
+                "number": "08",
+                "question": "Can we scale our team as our business grows?",
+                "answer": "Absolutely! Our infrastructure allows seamless scaling up or down of agent teams based on seasonal demands and business growth."
+              }
+            ],
+            "sidebar": {
+              "promoCard": {
+                "image": "/bpo/bpo9.jpg",
+                "title": "Still Have Questions?",
+                "desc": "Sure, feel free to ask any questions you have!",
+                "buttonText": "HERE TO HELP",
+                "buttonLink": "/contact"
+              }
+            }
+          }
+        }
+      },
+      "Contact": {
+        "variants": {
+          "BpoContact1": {
+            "banner": {
+              "title": "Contact Us",
+              "home": "Home",
+              "current": "Contact Us",
+              "bgImage": "/bpo/bpo1.jpg"
+            },
+            "getInTouch": {
+              "badge": "GET IN TOUCH",
+              "title": {
+                "normal": "We'd Love to",
+                "highlighted": "Hear from You"
+              },
+              "desc": "Have a question about our services or want to discuss a project? Send us a message and our team will respond shortly. Whether you are looking for inbound calling, chat support or a complete back office team, we will listen first and recommend a plan that fits your goals and your budget. ",
+              "cards": [
+                {
+                  "id": 1,
+                  "title": "Call Us",
+                  "info": "+91 98765 43210",
+                  "subInfo": "+91 120 456 7890",
+                  "icon": "Phone"
+                },
+                {
+                  "id": 2,
+                  "title": "Email Us",
+                  "info": "info@vertexbpo.com",
+                  "subInfo": "support@vertexbpo.com",
+                  "icon": "Mail"
+                },
+                {
+                  "id": 3,
+                  "title": "Visit Our Office",
+                  "info": "A-14, Sector 62, Noida,",
+                  "subInfo": "Uttar Pradesh 201309, India",
+                  "icon": "MapPin"
+                },
+                {
+                  "id": 4,
+                  "title": "Working Hours",
+                  "info": "Monday - Saturday",
+                  "subInfo": "9:00 AM - 6:00 PM",
+                  "icon": "Clock"
+                }
+              ]
+            },
+            "form": {
+              "title": "Send Us a Message",
+              "requiredText": "*Fields marked with * are required",
+              "fields": {
+                "fullName": "Full Name *",
+                "email": "Email Address *",
+                "phone": "Phone Number *",
+                "message": "Message *"
+              },
+              "buttonText": "Send Message",
+              "subjectSelect": {
+                "placeholder": "Select Subject",
+                "options": [
+                  { "value": "inbound", "label": "Inbound Call Support" },
+                  { "value": "outbound", "label": "Outbound Call Support" },
+                  { "value": "chat", "label": "Live Chat Support" },
+                  { "value": "technical", "label": "Technical Support" },
+                  { "value": "other", "label": "Other Inquiry" }
+                ]
+              }
+            },
+            "location": {
+              "badge": "OUR LOCATION",
+              "title": { "normal": "Find Us", "highlighted": "Here" },
+              "desc": "Visit our Noida office to meet the team and see our call center in action.",
+              "mapInfo": {
+                "name": "Vertex BPO",
+                "address": "A-14, Sector 62, Noida, Uttar Pradesh 201309, India",
+                "iframeUrl": "https://www.google.com/maps?q=Sector+62+Noida&output=embed",
+                "directionsUrl": "https://maps.google.com"
+              }
+            }
+          }
+        }
+      },
+      "Quote": {
+        "variants": {
+          "BpoQuote1": {
+            "banner": {
+              "title": "Get A Quote",
+              "home": "Home",
+              "current": "Get A Quote",
+              "bgImage": "/bpo/bpo1.jpg"
+            },
+            "intro": {
+              "badge": "REQUEST A QUOTE",
+              "title": {
+                "normal": "Tell Us What You Need,",
+                "highlighted": "We'll Handle the Rest"
+              },
+              "desc": "Share a few details about your business and support needs and we will send a tailored quote within one business day.",
+              "features": [
+                {
+                  "id": 1,
+                  "icon": "check",
+                  "title": "Free, no-obligation quote"
+                },
+                {
+                  "id": 2,
+                  "icon": "check",
+                  "title": "Reply within one business day"
+                },
+                {
+                  "id": 3,
+                  "icon": "check",
+                  "title": "Plans built around your volume"
+                }
+              ]
+            },
+            "form": {
+              "title": "Request Your Quote",
+              "requiredText": "*Fields marked with * are required",
+              "fields": {
+                "fullName": "Full Name *",
+                "company": "Company Name",
+                "email": "Email Address *",
+                "phone": "Phone Number *",
+                "service": "Service Required *",
+                "volume": "Estimated Monthly Volume",
+                "message": "Project Details *"
+              },
+              "selects": {
+                "service": {
+                  "placeholder": "Select Service",
+                  "options": [
+                    { "value": "inbound", "label": "Inbound Call Support" },
+                    { "value": "outbound", "label": "Outbound Call Support" },
+                    { "value": "chat", "label": "Live Chat Support" },
+                    { "value": "technical", "label": "Technical Support" },
+                    {
+                      "value": "customer-service",
+                      "label": "Customer Service"
+                    },
+                    { "value": "lead-generation", "label": "Lead Generation" },
+                    {
+                      "value": "virtual-assistance",
+                      "label": "Virtual Assistance"
+                    },
+                    { "value": "back-office", "label": "Back Office Support" }
+                  ]
+                },
+                "volume": {
+                  "placeholder": "Select Volume",
+                  "options": [
+                    { "value": "small", "label": "Up to 1,000 contacts" },
+                    { "value": "medium", "label": "1,000 - 10,000 contacts" },
+                    { "value": "large", "label": "10,000+ contacts" }
+                  ]
+                }
+              },
+              "checkboxText": "I agree to be contacted by Vertex BPO about this request.",
+              "buttonText": "Submit Request"
+            },
+            "cta": {
+              "image": "/bpo/bpo5.jpg",
+              "title": "Let's Build Your Support Plan",
+              "text": "Talk to our team today and get a tailored quote for your support needs.",
+              "button": { "label": "Contact Us", "href": "/contact" },
+              "contactInfo": [
+                {
+                  "id": 1,
+                  "icon": "Phone",
+                  "label": "Call Us",
+                  "value": "+91 98765 43210",
+                  "href": "tel:+919876543210"
+                },
+                {
+                  "id": 2,
+                  "icon": "Mail",
+                  "label": "Email Us",
+                  "value": "info@vertexbpo.com",
+                  "href": "mailto:info@vertexbpo.com"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "ThankYou": {
+        "variants": {
+          "BpoThankYou1": {
+            "image": "/thankyou.png",
+            "title": "Thank You",
+            "headline": "Your message has been sent successfully",
+            "paragraph": "Our team has received your details and will review your request right away. We will get back to you within one business day.",
+            "button": { "label": "Back to Home", "href": "/" }
+          }
+        }
+      },
+      "Legal": {
+        "variants": {
+          "BpoTerms1": {
+            "banner": {
+              "title": "Terms & Conditions",
+              "home": "Home",
+              "current": "Terms & Conditions",
+              "bgImage": "/bpo/bpo1.jpg"
+            },
+            "badge": "TERMS & CONDITIONS",
+            "title": { "normal": "Terms &", "highlighted": "Conditions" },
+            "desc": "These terms explain the rules that apply when you use our website and engage Vertex BPO for call center and business process services.",
+            "points": [
+              {
+                "id": 1,
+                "title": "Acceptance Of These Terms",
+                "description": "By using our website or engaging our services, you agree to these terms in full."
+              },
+              {
+                "id": 2,
+                "title": "Scope Of Services",
+                "description": "The services, service levels and deliverables for each engagement are defined in a written agreement or statement of work."
+              },
+              {
+                "id": 3,
+                "title": "Fees And Payment",
+                "description": "Fees are invoiced as agreed in the statement of work. Late payments may result in suspension of services until the balance is cleared."
+              },
+              {
+                "id": 4,
+                "title": "Confidentiality",
+                "description": "Both parties agree to keep confidential information private and to use it only for the purpose of the engagement."
+              },
+              {
+                "id": 5,
+                "title": "Limitation Of Liability",
+                "description": "Our total liability is limited to the fees paid for the affected service in the preceding three months."
+              },
+              {
+                "id": 6,
+                "title": "Changes To These Terms",
+                "description": "We may update these terms from time to time. The latest version is always published on this page."
+              }
+            ],
+            "contact": {
+              "title": "Contact Us",
+              "description": "Questions about these terms? Write to us and we will reply within one business day.",
+              "email": "info@vertexbpo.com",
+              "phone": "+91 98765 43210"
+            }
+          },
+          "BpoPrivacy1": {
+            "banner": {
+              "title": "Privacy Policy",
+              "home": "Home",
+              "current": "Privacy Policy",
+              "bgImage": "/bpo/bpo1.jpg"
+            },
+            "badge": "PRIVACY POLICY",
+            "title": { "normal": "Privacy", "highlighted": "Policy" },
+            "desc": "We only collect what we need to deliver our services and keep your information secure. This policy explains what we gather, why, and your choices.",
+            "points": [
+              {
+                "id": 1,
+                "title": "Information We Collect",
+                "description": "We collect contact details you share with us and technical data such as device type, browser and pages visited."
+              },
+              {
+                "id": 2,
+                "title": "How We Use Information",
+                "description": "We use your information to respond to enquiries, deliver services, improve our website and meet legal obligations."
+              },
+              {
+                "id": 3,
+                "title": "Customer Data Handling",
+                "description": "Data processed on behalf of clients is handled under strict access controls and only for the agreed purpose."
+              },
+              {
+                "id": 4,
+                "title": "Sharing Your Information",
+                "description": "We never sell personal data. We share it only with trusted providers who help us operate our services."
+              },
+              {
+                "id": 5,
+                "title": "Data Security",
+                "description": "Information is stored on secured systems with restricted access and encrypted transfers."
+              },
+              {
+                "id": 6,
+                "title": "Your Rights",
+                "description": "You can request access to, correction of or deletion of your personal data at any time."
+              }
+            ],
+            "contact": {
+              "title": "Contact Us",
+              "description": "To access, correct or delete your data, or to raise a privacy concern, contact our team.",
+              "email": "info@vertexbpo.com",
+              "phone": "+91 98765 43210"
+            }
+          },
+          "BpoRefund1": {
+            "banner": {
+              "title": "Refund Policy",
+              "home": "Home",
+              "current": "Refund Policy",
+              "bgImage": "/bpo/bpo1.jpg"
+            },
+            "badge": "REFUND POLICY",
+            "title": { "normal": "Refund", "highlighted": "Policy" },
+            "desc": "We want you to engage with confidence. This policy explains when a refund or credit may be requested and how it is processed.",
+            "points": [
+              {
+                "id": 1,
+                "title": "Requesting A Refund",
+                "description": "Write to our support team with your account details, the invoice number and the reason for your request."
+              },
+              {
+                "id": 2,
+                "title": "Eligibility",
+                "description": "Refunds may be requested for services not delivered as described in the statement of work."
+              },
+              {
+                "id": 3,
+                "title": "Non-Refundable Cases",
+                "description": "Services already delivered in line with the agreed scope and service levels are not refundable."
+              },
+              {
+                "id": 4,
+                "title": "Service Credits",
+                "description": "If agreed service levels are missed, a service credit may be applied to your next invoice."
+              },
+              {
+                "id": 5,
+                "title": "Processing Time",
+                "description": "Approved refunds are returned to the original payment method within 7 to 10 working days."
+              }
+            ],
+            "contact": {
+              "title": "Contact Us",
+              "description": "To raise a refund request or ask about an existing one, write to us and we will respond within one business day.",
+              "email": "info@vertexbpo.com",
+              "phone": "+91 98765 43210"
+            }
+          }
+        }
+      },
+      "Footer": {
+        "variants": {
+          "BpoFooter1": {
+            "logoImage": "/logo2.png",
+            "logoAlt": "Vertex BPO - Call Center Solutions",
+            "siteName": "Vertex BPO",
+            "tagline": "CALL CENTER SOLUTIONS",
+            "desc": "Delivering reliable and high-quality call center solutions to businesses. We connect, support and grow with their customers.",
+            "socialLinks": [
+              { "label": "facebook", "href": "https://www.facebook.com/" },
+              { "label": "x", "href": "https://x.com/" },
+              { "label": "linkedin", "href": "https://www.linkedin.com/" },
+              { "label": "youtube", "href": "https://www.youtube.com/" },
+              { "label": "instagram", "href": "https://www.instagram.com/" }
+            ],
+            "columns": [
+              {
+                "title": "Our Services",
+                "links": [
+                  {
+                    "label": "Inbound Call Support",
+                    "href": "/services/inbound-call-support"
+                  },
+                  {
+                    "label": "Outbound Call Support",
+                    "href": "/services/outbound-call-support"
+                  },
+                  {
+                    "label": "Live Chat Support",
+                    "href": "/services/live-chat-support"
+                  },
+                  {
+                    "label": "Technical Support",
+                    "href": "/services/technical-support"
+                  },
+                  {
+                    "label": "Customer Service",
+                    "href": "/services/customer-service"
+                  },
+                  {
+                    "label": "Lead Generation",
+                    "href": "/services/lead-generation"
+                  },
+                  {
+                    "label": "Virtual Assistance",
+                    "href": "/services/virtual-assistance"
+                  },
+                  {
+                    "label": "Back Office Support",
+                    "href": "/services/back-office-support"
+                  }
+                ]
+              },
+              {
+                "title": "Quick Links",
+                "links": [
+                  { "label": "Home", "href": "/" },
+                  { "label": "About Us", "href": "/about" },
+                  { "label": "Our Services", "href": "/services" },
+                  { "label": "Blog", "href": "/blog" },
+                  { "label": "FAQ", "href": "/faq" },
+                  { "label": "Get a Quote", "href": "/quote" },
+                  { "label": "Contact Us", "href": "/contact" },
+                  { "label": "Thank You", "href": "/thankyou" }
+                ]
+              }
+            ],
+            "footerContact": {
+              "title": "Contact Info",
+              "items": [
+                {
+                  "icon": "map-pin",
+                  "lines": [
+                    { "text": "A-14, Sector 62, Noida," },
+                    { "text": "Uttar Pradesh 201309, India" }
+                  ]
+                },
+                {
+                  "icon": "phone",
+                  "lines": [
+                    { "text": "+91 98765 43210", "href": "tel:+919876543210" },
+                    { "text": "+91 120 456 7890", "href": "tel:+911204567890" }
+                  ]
+                },
+                {
+                  "icon": "mail",
+                  "lines": [
+                    {
+                      "text": "info@vertexbpo.com",
+                      "href": "mailto:info@vertexbpo.com"
+                    },
+                    {
+                      "text": "support@vertexbpo.com",
+                      "href": "mailto:support@vertexbpo.com"
+                    }
+                  ]
+                }
+              ]
+            },
+            "copyright": {
+              "prefix": "copyright \u00a9  2026",
+              "brand": "Vertex BPO",
+              "suffix": ". All rights reserved. Powered by Lestow."
+            },
+            "legalLinks": [
+              { "label": "Privacy Policy", "href": "/privacy" },
+              { "label": "Terms & Conditions", "href": "/terms" },
+              { "label": "Refund Policy", "href": "/refund-policy" }
+            ],
+            "backToTop": true,
+            "backToTopLabel": "Back to top"
+          }
+        }
+      },
+      "NotFound": {
+        "variants": {
+          "BpoNotFound1": {
+            "badge": "O O P S !",
+            "errorCode": "404",
+            "title": { "normal": "Page Not", "highlighted": "Found" },
+            "desc": "The page you are looking for might have been removed, renamed, or is temporarily unavailable.",
+            "bgImage": "/bpo/bpo10.jpg",
+            "buttons": [
+              { "label": "Back to Home", "href": "/", "variant": "primary" },
+              {
+                "label": "Our Services",
+                "href": "/services",
+                "variant": "outline"
+              }
+            ],
+            "helpText": "Need help?",
+            "helpLink": { "label": "Contact Us", "href": "/contact" }
+          }
+        }
+      }
+    }
+  }
+}
