@@ -1,5 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronRight } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 export interface PageBannerData {
   title: string;
@@ -19,7 +21,10 @@ export default function PageBanner({
   compact?: boolean;
 }) {
   return (
-    <section
+    <ScrollReveal
+      as="section"
+      direction="up"
+      distance={40}
       className={`relative isolate overflow-hidden h-[220px] sm:h-[280px] lg:h-[380px] ${className}`}
     >
       {/* Image: full-bleed on mobile/tablet, left panel on desktop */}
@@ -30,10 +35,11 @@ export default function PageBanner({
             : "page-banner-image-cut lg:w-1/2"
         }`}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={data.bgImage}
           alt={`${data.title}${data.highlightedTitle ? ` ${data.highlightedTitle}` : ""}`}
+          fill
+          sizes="100vw"
           className={`h-full w-full object-cover ${
             compact ? "object-top" : "object-center"
           }`}
@@ -127,6 +133,6 @@ export default function PageBanner({
           </nav>
         </div>
       </div>
-    </section>
+    </ScrollReveal>
   );
 }

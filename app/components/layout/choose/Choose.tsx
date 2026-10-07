@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { site, SectionProps, BpoChooseData } from "@/data"; // Adjust import path as needed
+import ScrollReveal from "../../shared/ScrollReveal";
 
 function useCountUp(target: number, start: boolean, duration = 1800) {
   const [value, setValue] = useState(0);
@@ -99,11 +100,22 @@ export default function Choose({
       ref={sectionRef}
       className={`py-8 md:py-12 bg-white overflow-hidden ${className}`}
     >
-      <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${contentClassName}`}>
+      <ScrollReveal
+        as="div"
+        direction="up"
+        distance={32}
+        className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${contentClassName}`}
+      >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
           {/* Left Column: Content */}
-          <div className="lg:col-span-7 space-y-0">
+          <ScrollReveal
+            as="div"
+            direction="right"
+            distance={32}
+            mobileDirection="up"
+            className="lg:col-span-7 space-y-0"
+          >
 
             {/* Badge */}
             <div className="flex items-center gap-3">
@@ -126,8 +138,16 @@ export default function Choose({
 
             {/* Features with Circular Progress Bars */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-2">
-              {data.features.map((feature) => (
-                <div key={feature.id} className="space-y-4">
+              {data.features.map((feature, i) => (
+                <ScrollReveal
+                  key={feature.id}
+                  as="div"
+                  index={i}
+                  staggerChildren={0.08}
+                  delay={0.1}
+                  distance={40}
+                  className="space-y-4"
+                >
 
                   {/* Circular Percentage Ring */}
                   <ProgressRing value={feature.percentage} start={started} />
@@ -142,7 +162,7 @@ export default function Choose({
                     </p>
                   </div>
 
-                </div>
+                </ScrollReveal>
               ))}
             </div>
 
@@ -157,23 +177,30 @@ export default function Choose({
               </Link>
             </div>
 
-          </div>
+          </ScrollReveal>
 
           {/* Right Column: Image */}
-          <div className="lg:col-span-5 relative">
+          <ScrollReveal
+            as="div"
+            direction="left"
+            distance={32}
+            mobileDirection="up"
+            className="lg:col-span-5 relative"
+          >
             <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[580px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src={data.image.src}
                 alt={data.image.alt}
                 fill
+                sizes="(max-width: 1023px) 100vw, 40vw"
                 className="object-cover object-center"
                 priority
               />
             </div>
-          </div>
+          </ScrollReveal>
 
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   );
 }

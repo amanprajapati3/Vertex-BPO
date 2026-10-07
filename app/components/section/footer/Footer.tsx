@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowUp,
   ChevronRight,
@@ -53,10 +54,12 @@ export default function BpoFooter1({
           {/*  Brand  */}
           <div>
             <Link href="/" className="inline-block">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={footer.logoImage}
                 alt={footer.logoAlt}
+                width={717}
+                height={208}
+                sizes="300px"
                 className="h-16 w-auto sm:h-14 md:h-20"
               />
             </Link>

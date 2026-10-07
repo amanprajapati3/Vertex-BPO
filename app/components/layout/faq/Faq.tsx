@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Minus, Plus, ArrowRight } from "lucide-react";
 import PageBanner from "../../shared/PageBanner";
+import ScrollReveal from "../../shared/ScrollReveal";
 import { site } from "@/data";
 
 export default function Faq() {
@@ -19,11 +20,21 @@ export default function Faq() {
     <>
       <PageBanner data={data.banner} />
 
-      <section className="py-8 md:py-12 bg-white overflow-hidden">
+      <ScrollReveal
+        as="section"
+        direction="up"
+        distance={40}
+        className="py-8 md:py-12 bg-white overflow-hidden"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto mb-8 space-y-0">
+          <ScrollReveal
+            as="div"
+            direction="up"
+            distance={40}
+            className="text-center max-w-3xl mx-auto mb-8 space-y-0"
+          >
             <div className="flex items-center justify-center gap-3">
               <span className="text-red-600 font-semibold tracking-wider text-sm uppercase">
                 {data.badge}
@@ -40,21 +51,32 @@ export default function Faq() {
             <p className="text-gray-600 text-base sm:text-lg">
               {data.desc}
             </p>
-          </div>
+          </ScrollReveal>
 
           {/* Content Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
             {/* FAQ Column */}
-            <div className="lg:col-span-7 lg:col-start-6 order-1 lg:order-2 space-y-3">
+            <ScrollReveal
+              as="div"
+              direction="left"
+              distance={32}
+              mobileDirection="up"
+              className="lg:col-span-7 lg:col-start-6 order-1 lg:order-2 space-y-3"
+            >
 
               <div className="space-y-2">
-                {data.faqs.map((faq) => {
+                {data.faqs.map((faq, i) => {
                   const isOpen = openId === faq.id;
 
                   return (
-                    <div
+                    <ScrollReveal
                       key={faq.id}
+                      as="div"
+                      index={i}
+                      staggerChildren={0.08}
+                      delay={0.1}
+                      distance={40}
                       className={`transition-all duration-300 overflow-hidden ${
                         isOpen
                           ? "bg-red-50/50 border-red-200 shadow-sm"
@@ -85,13 +107,18 @@ export default function Faq() {
                           <p>{faq.answer}</p>
                         </div>
                       )}
-                    </div>
+                    </ScrollReveal>
                   );
                 })}
               </div>
 
               {/* Desktop CTA - unchanged position */}
-              <div className="hidden lg:flex bg-[#111111] rounded-2xl p-6 sm:p-8 items-center justify-between gap-6 shadow-xl mt-8">
+              <ScrollReveal
+                as="div"
+                direction="up"
+                distance={40}
+                className="hidden lg:flex bg-[#111111] rounded-2xl p-6 sm:p-8 items-center justify-between gap-6 shadow-xl mt-8"
+              >
                 <div className="space-y-1 text-left">
                   <h3 className="text-white text-xl sm:text-2xl font-bold">
                     {data.sidebar.promoCard.title}
@@ -109,25 +136,37 @@ export default function Faq() {
                   <span>{data.sidebar.promoCard.buttonText}</span>
                   <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
-              </div>
-            </div>
+              </ScrollReveal>
+            </ScrollReveal>
 
             {/* Image */}
-            <div className="lg:col-span-5 lg:col-start-1 order-2 lg:order-1 relative">
+            <ScrollReveal
+              as="div"
+              direction="right"
+              distance={32}
+              mobileDirection="up"
+              className="lg:col-span-5 lg:col-start-1 order-2 lg:order-1 relative"
+            >
               <div className="relative w-full h-[450px] sm:h-[550px] lg:h-[620px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src="/bpo/bpo9.jpg"
                   alt="Call center agent with headset"
                   fill
+                  sizes="(max-width: 1023px) 100vw, 40vw"
                   className="object-cover object-center"
                   priority
                 />
               </div>
-            </div>
+            </ScrollReveal>
           </div>
 
           {/* Mobile + Tablet CTA - always after image */}
-          <div className="lg:hidden bg-[#111111] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl mt-8">
+          <ScrollReveal
+            as="div"
+            direction="up"
+            distance={40}
+            className="lg:hidden bg-[#111111] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl mt-8"
+          >
             <div className="space-y-1 text-center sm:text-left">
               <h3 className="text-white text-xl sm:text-2xl font-bold">
                 {data.sidebar.promoCard.title}
@@ -145,10 +184,10 @@ export default function Faq() {
               <span>{data.sidebar.promoCard.buttonText}</span>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
-          </div>
+          </ScrollReveal>
 
         </div>
-      </section>
+      </ScrollReveal>
     </>
   );
 }

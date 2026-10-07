@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import ScrollReveal from "../../shared/ScrollReveal";
 import { site, type SectionProps, type BpoThankYouData } from "@/data";
 
 export default function ThankYou({
@@ -9,11 +10,22 @@ export default function ThankYou({
   contentClassName = "",
 }: SectionProps<BpoThankYouData>) {
   return (
-    <section className={`bg-white py-8 md:py-12 ${className}`}>
+    <ScrollReveal
+      as="section"
+      direction="up"
+      distance={40}
+      className={`bg-white py-8 md:py-12 ${className}`}
+    >
       <div
         className={`mx-auto grid w-full max-w-[1320px] items-center gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 ${contentClassName}`}
       >
-        <div className="relative h-[240px] overflow-hidden rounded-md sm:h-[320px] lg:h-[520px]">
+        <ScrollReveal
+          as="div"
+          direction="right"
+          distance={32}
+          mobileDirection="up"
+          className="relative h-[240px] overflow-hidden rounded-md sm:h-[320px] lg:h-[520px]"
+        >
           <Image
             src={data.image}
             alt={data.title}
@@ -22,9 +34,15 @@ export default function ThankYou({
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"
           />
-        </div>
+        </ScrollReveal>
 
-        <div className="flex flex-col items-center text-center">
+        <ScrollReveal
+          as="div"
+          direction="left"
+          distance={32}
+          mobileDirection="up"
+          className="flex flex-col items-center text-center"
+        >
           <svg
             viewBox="0 0 52 52"
             className="h-16 w-16 sm:h-20 sm:w-20"
@@ -75,8 +93,8 @@ export default function ThankYou({
               aria-hidden
             />
           </Link>
-        </div>
+        </ScrollReveal>
       </div>
-    </section>
+    </ScrollReveal>
   );
 }

@@ -84,10 +84,10 @@
       "Topbar": {
         "variants": {
           "BpoTopbar1": {
-            "phone": "+91 98765 43210",
-            "phoneHref": "tel:+919876543210",
-            "email": "info@vertexbpo.com",
-            "emailHref": "mailto:info@vertexbpo.com",
+            "phone": "+1 (123) 456 789",
+            "phoneHref": "tel:+1 (123) 456 789",
+            "email": "info@example.com",
+            "emailHref": "mailto:info@example.com",
             "socialLinks": [
               { "label": "facebook", "href": "https://www.facebook.com/" },
               { "label": "instagram", "href": "https://www.instagram.com/" },
@@ -268,8 +268,8 @@
             },
             "phoneBlock": {
               "label": "Call Us On:",
-              "phone": "+91 98765 43210",
-              "phoneHref": "tel:+919876543210"
+              "phone": "+1 (123) 456 789",
+              "phoneHref": "tel:+1 (123) 456 789"
             }
           }
         }
@@ -728,7 +728,7 @@
             },
             "button": {
               "label": "Start Consultation",
-              "href": "/consultation",
+              "href": "/contact",
               "icon": "arrow-right"
             }
           }
@@ -1474,22 +1474,22 @@
                 {
                   "id": 1,
                   "title": "Call Us",
-                  "info": "+91 98765 43210",
-                  "subInfo": "+91 120 456 7890",
+                  "info": "+1 (123) 456 789",
+                  "subInfo": "+1 (123) 456 789",
                   "icon": "Phone"
                 },
                 {
                   "id": 2,
                   "title": "Email Us",
-                  "info": "info@vertexbpo.com",
-                  "subInfo": "support@vertexbpo.com",
+                  "info": "info@example.com",
+                  "subInfo": "info@example.com",
                   "icon": "Mail"
                 },
                 {
                   "id": 3,
                   "title": "Visit Our Office",
-                  "info": "A-14, Sector 62, Noida,",
-                  "subInfo": "Uttar Pradesh 201309, India",
+                  "info": "25/B Milford Road, New York",
+                  "subInfo": "USA",
                   "icon": "MapPin"
                 },
                 {
@@ -1528,7 +1528,7 @@
               "desc": "Visit our Noida office to meet the team and see our call center in action.",
               "mapInfo": {
                 "name": "Vertex BPO",
-                "address": "A-14, Sector 62, Noida, Uttar Pradesh 201309, India",
+                "address": "25/B Milford Road, New York",
                 "iframeUrl": "https://www.google.com/maps?q=Sector+62+Noida&output=embed",
                 "directionsUrl": "https://maps.google.com"
               }
@@ -1624,15 +1624,15 @@
                   "id": 1,
                   "icon": "Phone",
                   "label": "Call Us",
-                  "value": "+91 98765 43210",
-                  "href": "tel:+919876543210"
+                  "value": "+1 (123) 456 789",
+                  "href": "tel:+1 (123) 456 789"
                 },
                 {
                   "id": 2,
                   "icon": "Mail",
                   "label": "Email Us",
-                  "value": "info@vertexbpo.com",
-                  "href": "mailto:info@vertexbpo.com"
+                  "value": "info@example.com",
+                  "href": "mailto:info@example.com"
                 }
               ]
             }
@@ -1697,8 +1697,8 @@
             "contact": {
               "title": "Contact Us",
               "description": "Questions about these terms? Write to us and we will reply within one business day.",
-              "email": "info@vertexbpo.com",
-              "phone": "+91 98765 43210"
+              "email": "info@example.com",
+              "phone": "+1 (123) 456 789"
             }
           },
           "BpoPrivacy1": {
@@ -1746,8 +1746,8 @@
             "contact": {
               "title": "Contact Us",
               "description": "To access, correct or delete your data, or to raise a privacy concern, contact our team.",
-              "email": "info@vertexbpo.com",
-              "phone": "+91 98765 43210"
+              "email": "info@example.com",
+              "phone": "+1 (123) 456 789"
             }
           },
           "BpoRefund1": {
@@ -1790,8 +1790,8 @@
             "contact": {
               "title": "Contact Us",
               "description": "To raise a refund request or ask about an existing one, write to us and we will respond within one business day.",
-              "email": "info@vertexbpo.com",
-              "phone": "+91 98765 43210"
+              "email": "info@example.com",
+              "phone": "+1 (123) 456 789"
             }
           }
         }
@@ -1869,15 +1869,15 @@
                 {
                   "icon": "map-pin",
                   "lines": [
-                    { "text": "A-14, Sector 62, Noida," },
-                    { "text": "Uttar Pradesh 201309, India" }
+                    { "text": "25/B Milford Road, New York" },
+                    { "text": "USA" }
                   ]
                 },
                 {
                   "icon": "phone",
                   "lines": [
-                    { "text": "+91 98765 43210", "href": "tel:+919876543210" },
-                    { "text": "+91 120 456 7890", "href": "tel:+911204567890" }
+                    { "text": "+1 (123) 456 789", "href": "tel:+1(123) 456 789" },
+                    { "text": "+1 (123) 456 799", "href": "tel:+1(123) 456 799" }
                   ]
                 },
                 {

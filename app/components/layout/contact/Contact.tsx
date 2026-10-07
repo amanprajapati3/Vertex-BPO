@@ -1,5 +1,6 @@
 import { Clock, Mail, MapPin, Phone, type LucideIcon } from "lucide-react";
 import PageBanner from "../../shared/PageBanner";
+import ScrollReveal from "../../shared/ScrollReveal";
 import {
   site,
   type SectionProps,
@@ -26,13 +27,23 @@ export default function Contact({
     <>
       <PageBanner data={contact.banner} />
 
-      <section className={`bg-white py-8 md:py-12 ${className}`}>
+      <ScrollReveal
+        as="section"
+        direction="up"
+        distance={40}
+        className={`bg-white py-8 md:py-12 ${className}`}
+      >
         <div
           className={`mx-auto w-full max-w-[1320px] px-4 sm:px-6 ${contentClassName}`}
         >
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
             {/* Left: heading, paragraph, contact details */}
-            <div>
+            <ScrollReveal
+              as="div"
+              direction="right"
+              distance={32}
+              mobileDirection="up"
+            >
               <div className="flex items-center gap-3">
                 <span className="text-sm font-semibold uppercase tracking-wider text-[#E10600]">
                   {getInTouch.badge}
@@ -51,10 +62,18 @@ export default function Contact({
               </p>
 
               <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 space-y-6">
-                {getInTouch.cards.map((card) => {
+                {getInTouch.cards.map((card, i) => {
                   const Icon = cardIcons[card.icon as BpoContactIcon];
                   return (
-                    <li key={card.id} className="flex items-start gap-4">
+                    <ScrollReveal
+                      key={card.id}
+                      as="li"
+                      index={i}
+                      staggerChildren={0.08}
+                      delay={0.1}
+                      distance={40}
+                      className="flex items-start gap-4"
+                    >
                       <span className="flex h-12 lg:h-20 lg:w-20 w-12 shrink-0 items-center justify-center rounded-full bg-[#E10600]/10 text-[#E10600]">
                         <Icon className="h-6 lg:h-9 lg:w-9 w-6" aria-hidden />
                       </span>
@@ -63,14 +82,20 @@ export default function Contact({
                         <p className="text-sm text-[#666666]">{card.info}</p>
                         <p className="text-sm text-[#666666]">{card.subInfo}</p>
                       </div>
-                    </li>
+                    </ScrollReveal>
                   );
                 })}
               </ul>
-            </div>
+            </ScrollReveal>
 
             {/* Right: contact form */}
-            <div className="rounded-lg border border-black/5 bg-white p-5 shadow-[0_8px_30px_rgba(0,0,0,0.08)] sm:p-8">
+            <ScrollReveal
+              as="div"
+              direction="left"
+              distance={32}
+              mobileDirection="up"
+              className="rounded-lg border border-black/5 bg-white p-5 shadow-[0_8px_30px_rgba(0,0,0,0.08)] sm:p-8"
+            >
               <h3 className="text-2xl font-bold text-black">{form.title}</h3>
 
               <form className="mt-6 grid gap-4">
@@ -149,13 +174,13 @@ export default function Contact({
                   {form.buttonText}
                 </button>
               </form>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
-      </section>
+      </ScrollReveal>
 
       {/* Full-width Google map */}
-      <div className="p-10 mb-10">
+      <ScrollReveal as="div" direction="up" distance={40} className="p-10 mb-10">
 <iframe
         src={location.mapInfo.iframeUrl}
         title={location.mapInfo.name}
@@ -164,8 +189,8 @@ export default function Contact({
         referrerPolicy="no-referrer-when-downgrade"
         allowFullScreen
       />
-      </div>
-      
+      </ScrollReveal>
+
     </>
   );
 }

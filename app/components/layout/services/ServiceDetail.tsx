@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle2, ChevronRight } from "lucide-react";
 import PageBanner from "../../shared/PageBanner";
+import ScrollReveal from "../../shared/ScrollReveal";
 import { site, type BpoServiceDetail, type BpoServiceItem } from "@/data";
 
 export default function ServiceDetail({
@@ -18,9 +19,15 @@ export default function ServiceDetail({
     <>
       <PageBanner data={page.banner} compact />
 
-      <main className="bg-white py-8 md:py-12">
+      <ScrollReveal as="main" direction="up" distance={32} className="bg-white py-8 md:py-12">
         <div className="mx-auto grid w-full max-w-[1320px] grid-cols-1 gap-6 px-4 sm:px-8 md:grid-cols-[minmax(0,2.6fr)_minmax(180px,1fr)] md:gap-[18px]">
-          <article className="min-w-0">
+          <ScrollReveal
+            as="article"
+            direction="right"
+            distance={32}
+            mobileDirection="up"
+            className="min-w-0"
+          >
             <div className="relative aspect-[3.2/1] overflow-hidden rounded-[3px] bg-gray-100">
               <Image
                 src={content.heroImage}
@@ -49,9 +56,14 @@ export default function ServiceDetail({
             </p>
 
             <ul className="mt-4 space-y-2">
-              {detail.features.map((feature) => (
-                <li
+              {detail.features.map((feature, i) => (
+                <ScrollReveal
                   key={feature}
+                  as="li"
+                  index={i}
+                  staggerChildren={0.08}
+                  delay={0.1}
+                  distance={40}
                   className="flex items-start gap-2.5 text-base leading-[1.6] text-[#384454]"
                 >
                   <CheckCircle2
@@ -60,7 +72,7 @@ export default function ServiceDetail({
                     aria-hidden
                   />
                   <span>{feature}</span>
-                </li>
+                </ScrollReveal>
               ))}
             </ul>
 
@@ -85,10 +97,23 @@ export default function ServiceDetail({
             <p className="mt-3 text-base leading-[1.7] text-[#384454]">
               {content.closingDescription}
             </p>
-          </article>
+          </ScrollReveal>
 
-          <aside className="space-y-4">
-            <section className="border border-gray-200 bg-white p-4 shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
+          <ScrollReveal
+            as="aside"
+            direction="left"
+            distance={32}
+            mobileDirection="up"
+            className="space-y-4"
+          >
+            <ScrollReveal
+              as="section"
+              index={0}
+              staggerChildren={0.08}
+              delay={0.1}
+              distance={40}
+              className="border border-gray-200 bg-white p-4 shadow-[0_2px_10px_rgba(0,0,0,0.05)]"
+            >
               <h2 className="border-b border-[#ff2635] pb-2 text-xl font-bold text-[#101820]">
                 {sidebar.servicesTitle}
               </h2>
@@ -119,9 +144,16 @@ export default function ServiceDetail({
                   </li>
                 ))}
               </ul>
-            </section>
+            </ScrollReveal>
 
-            <section className="border border-gray-200 bg-white p-4 shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
+            <ScrollReveal
+              as="section"
+              index={1}
+              staggerChildren={0.08}
+              delay={0.1}
+              distance={40}
+              className="border border-gray-200 bg-white p-4 shadow-[0_2px_10px_rgba(0,0,0,0.05)]"
+            >
               <h2 className="border-b border-[#ff2635] pb-2 text-xl font-bold text-[#101820]">
                 {sidebar.callbackTitle}
               </h2>
@@ -155,10 +187,10 @@ export default function ServiceDetail({
                   {sidebar.callbackButton}
                 </button>
               </form>
-            </section>
-          </aside>
+            </ScrollReveal>
+          </ScrollReveal>
         </div>
-      </main>
+      </ScrollReveal>
     </>
   );
 }

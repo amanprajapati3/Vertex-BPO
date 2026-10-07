@@ -2,8 +2,10 @@
 
 import { useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowRight, CalendarDays, User } from "lucide-react";
 import { site, type BpoBlogData, type SectionProps } from "@/data";
+import ScrollReveal from "../shared/ScrollReveal";
 
 type BpoBlogProps = SectionProps<BpoBlogData> & {
   /** Show paginated posts (blog page) instead of the home-page count. */
@@ -36,7 +38,12 @@ export default function BpoBlog1({
       ref={sectionRef}
       className={`bg-white py-8 md:py-12 ${className}`}
     >
-      <div className="mx-auto w-full max-w-[1320px] px-4 sm:px-6">
+      <ScrollReveal
+        as="div"
+        direction="up"
+        distance={32}
+        className="mx-auto w-full max-w-[1320px] px-4 sm:px-6"
+      >
         {/* Heading */}
         <div className="mx-auto max-w-[720px] text-center">
           <p className="text-[12px] sm:text-xl font-semibold uppercase tracking-wide text-[#E10600] ">
@@ -53,8 +60,13 @@ export default function BpoBlog1({
         {/* Cards: image left on the first card, right on the second (desktop) */}
         <div className="mt-10 grid gap-6 lg:mt-12 lg:grid-cols-2">
           {items.map((post, index) => (
-            <article
+            <ScrollReveal
+              as="article"
               key={post.id}
+              index={index}
+              staggerChildren={0.08}
+              delay={0.1}
+              distance={40}
               className={`flex flex-col overflow-hidden rounded-lg border border-black/5 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.08)] sm:flex-row ${
                 index % 2 === 1 ? "sm:flex-row-reverse" : ""
               }`}
@@ -65,10 +77,12 @@ export default function BpoBlog1({
                 tabIndex={-1}
                 aria-hidden
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={post.image}
                   alt={post.title}
+                  width={1600}
+                  height={1000}
+                  sizes="(max-width: 1023px) 100vw, 25vw"
                   className="aspect-[16/10] rounded-xl h-full w-full object-cover transition-transform duration-500 hover:scale-105 sm:aspect-auto "
                 />
               </Link>
@@ -107,7 +121,7 @@ export default function BpoBlog1({
                   <ArrowRight className="h-5 w-5" aria-hidden />
                 </Link>
               </div>
-            </article>
+            </ScrollReveal>
           ))}
         </div>
 
@@ -153,7 +167,7 @@ export default function BpoBlog1({
             </button>
           </nav>
         )}
-      </div>
+      </ScrollReveal>
     </section>
   );
 }

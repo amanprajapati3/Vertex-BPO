@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CalendarDays, ChevronRight, Clock3, Mail, Phone, User } from "lucide-react";
 import PageBanner from "../../shared/PageBanner";
+import ScrollReveal from "../../shared/ScrollReveal";
 import { getBlogPosts, site, type BpoBlogArticle, type BpoBlogPost } from "@/data";
 
 export default function BlogDetail({
@@ -18,9 +19,20 @@ export default function BlogDetail({
     <>
       <PageBanner data={page.banner} compact />
 
-      <main className="bg-white pb-8 pt-7 sm:pb-10 md:pb-8 md:pt-[30px]">
+      <ScrollReveal
+        as="main"
+        direction="up"
+        distance={40}
+        className="bg-white pb-8 pt-7 sm:pb-10 md:pb-8 md:pt-[30px]"
+      >
         <div className="mx-auto grid w-full max-w-[1320px] grid-cols-1 gap-5 px-4 sm:px-8 md:grid-cols-[minmax(0,2.3fr)_minmax(190px,1fr)] md:gap-[18px]">
-          <article className="min-w-0">
+          <ScrollReveal
+            as="article"
+            direction="right"
+            distance={32}
+            mobileDirection="up"
+            className="min-w-0"
+          >
             <div className="relative aspect-[2.84/1] overflow-hidden rounded-[3px] bg-gray-100">
               <Image
                 src={post.image}
@@ -57,7 +69,13 @@ export default function BlogDetail({
             </p>
 
             {article.sections.map((section, index) => (
-              <section key={`${section.title}-${index}`} className="mt-6">
+              <ScrollReveal
+                key={`${section.title}-${index}`}
+                as="section"
+                direction="up"
+                distance={40}
+                className="mt-6"
+              >
                 <h2 className="text-xl font-bold leading-[1.3] text-[#111c2b] lg:text-2xl">
                   {index + 1}. {section.title}
                 </h2>
@@ -77,12 +95,27 @@ export default function BlogDetail({
                     />
                   </div>
                 )}
-              </section>
+              </ScrollReveal>
             ))}
-          </article>
+          </ScrollReveal>
 
-          <aside className="space-y-4">
-            <section className="border border-gray-200 bg-white p-4 shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
+          <ScrollReveal
+            as="aside"
+            direction="left"
+            distance={32}
+            mobileDirection="up"
+            className="space-y-4"
+          >
+            <ScrollReveal
+              key="recent-posts"
+              as="section"
+              direction="up"
+              distance={40}
+              index={0}
+              staggerChildren={0.08}
+              delay={0.1}
+              className="border border-gray-200 bg-white p-4 shadow-[0_2px_10px_rgba(0,0,0,0.04)]"
+            >
               <h2 className="border-b border-[#ff2635] pb-2 text-xl font-bold text-[#111c2b]">
                 {page.sidebar.recentTitle}
               </h2>
@@ -118,9 +151,18 @@ export default function BlogDetail({
                   </li>
                 ))}
               </ul>
-            </section>
+            </ScrollReveal>
 
-            <section className="rounded-[3px] bg-[#090a0c] p-4 text-white">
+            <ScrollReveal
+              key="sidebar-promo"
+              as="section"
+              direction="up"
+              distance={40}
+              index={1}
+              staggerChildren={0.08}
+              delay={0.1}
+              className="rounded-[3px] bg-[#090a0c] p-4 text-white"
+            >
               <h2 className="border-b-2 border-[#ed111d] pb-2 text-xl font-bold">
                 {page.sidebar.promoTitle}
               </h2>
@@ -150,9 +192,18 @@ export default function BlogDetail({
                 />
                 {site.topbar.email}
               </a>
-            </section>
+            </ScrollReveal>
 
-            <section className="border border-gray-200 bg-white p-4 shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
+            <ScrollReveal
+              key="sidebar-categories"
+              as="section"
+              direction="up"
+              distance={40}
+              index={2}
+              staggerChildren={0.08}
+              delay={0.1}
+              className="border border-gray-200 bg-white p-4 shadow-[0_2px_10px_rgba(0,0,0,0.04)]"
+            >
               <h2 className="border-b border-[#ff2635] pb-2 text-xl font-bold text-[#111c2b]">
                 {page.sidebar.categoriesTitle}
               </h2>
@@ -176,10 +227,10 @@ export default function BlogDetail({
                   </li>
                 ))}
               </ul>
-            </section>
-          </aside>
+            </ScrollReveal>
+          </ScrollReveal>
         </div>
-      </main>
+      </ScrollReveal>
     </>
   );
 }

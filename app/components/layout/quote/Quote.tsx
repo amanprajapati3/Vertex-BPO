@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Check, Mail, Phone } from "lucide-react";
 import PageBanner from "../../shared/PageBanner";
+import ScrollReveal from "../../shared/ScrollReveal";
 import {
   site,
   type SectionProps,
@@ -26,13 +27,23 @@ export default function Quote({
     <>
       <PageBanner data={quote.banner} />
 
-      <section className={`bg-white py-8 md:py-12 ${className}`}>
+      <ScrollReveal
+        as="section"
+        direction="up"
+        distance={40}
+        className={`bg-white py-8 md:py-12 ${className}`}
+      >
         <div
           className={`mx-auto w-full max-w-[1320px] px-4 sm:px-6 ${contentClassName}`}
         >
           <div className="grid gap-10 md:gap-0 md:grid-cols-2 lg:gap-16">
             {/* Left: intro and features */}
-            <div>
+            <ScrollReveal
+              as="div"
+              direction="right"
+              distance={32}
+              mobileDirection="up"
+            >
               <div className="flex items-center gap-3">
                 <span className="text-sm font-semibold uppercase tracking-wider text-[#E10600]">
                   {intro.badge}
@@ -49,21 +60,35 @@ export default function Quote({
               </p>
 
               <ul className="mt-8 space-y-4">
-                {intro.features.map((feature) => (
-                  <li key={feature.id} className="flex items-center gap-3">
+                {intro.features.map((feature, i) => (
+                  <ScrollReveal
+                    key={feature.id}
+                    as="li"
+                    index={i}
+                    staggerChildren={0.08}
+                    delay={0.1}
+                    distance={40}
+                    className="flex items-center gap-3"
+                  >
                     <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#E10600] text-white">
                       <Check className="h-4 w-4" strokeWidth={3} aria-hidden />
                     </span>
                     <span className="font-semibold text-black">
                       {feature.title}
                     </span>
-                  </li>
+                  </ScrollReveal>
                 ))}
               </ul>
-            </div>
+            </ScrollReveal>
 
             {/* Right: quote request form */}
-            <div className="rounded-lg border border-black/5 bg-white p-3 shadow-[0_8px_30px_rgba(0,0,0,0.08)] sm:p-5">
+            <ScrollReveal
+              as="div"
+              direction="left"
+              distance={32}
+              mobileDirection="up"
+              className="rounded-lg border border-black/5 bg-white p-3 shadow-[0_8px_30px_rgba(0,0,0,0.08)] sm:p-5"
+            >
               <h3 className="text-2xl font-bold text-black">{form.title}</h3>
 
               <form className="mt-4 grid gap-4">
@@ -182,11 +207,16 @@ export default function Quote({
                   {form.buttonText}
                 </button>
               </form>
-            </div>
+            </ScrollReveal>
           </div>
 
           {/* CTA banner with contact info over the image */}
-          <div className="relative isolate mt-12 overflow-hidden rounded-md">
+          <ScrollReveal
+            as="div"
+            direction="up"
+            distance={40}
+            className="relative isolate mt-12 overflow-hidden rounded-md"
+          >
             <Image
               src={cta.image}
               alt=""
@@ -238,9 +268,9 @@ export default function Quote({
                 })}
               </ul>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
-      </section>
+      </ScrollReveal>
     </>
   );
 }

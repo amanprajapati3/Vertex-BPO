@@ -1,8 +1,10 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
+import Image from "next/image";
+import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { site, type BpoTestimonialData, type SectionProps } from "@/data";
+import ScrollReveal from "../shared/ScrollReveal";
 
 export default function BpoTestimonial1({
   data = site.testimonial,
@@ -69,7 +71,12 @@ export default function BpoTestimonial1({
   };
 
   return (
-    <section className={`bg-black py-8 md:py-12 mt-8 md:mt-12 ${className}`}>
+    <ScrollReveal
+      as="section"
+      direction="up"
+      distance={40}
+      className={`bg-black py-8 md:py-12 mt-8 md:mt-12 ${className}`}
+    >
       <div className="mx-auto w-full max-w-[1320px] px-4 sm:px-6">
         {/* Heading */}
         <div className="mx-auto max-w-[750px] text-center">
@@ -127,14 +134,16 @@ export default function BpoTestimonial1({
                 </span>
 
                 <p className="mt-2 flex-1 text-[14px] sm:text-base lg:text-lg leading-[1.75] text-white/90">
-                  "{item.quote}"
+                  &quot;{item.quote}&quot;
                 </p>
 
                 <div className="mt-3 flex items-center gap-4 border-t border-white/15 pt-5">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.name}
+                    width={96}
+                    height={96}
+                    sizes="(max-width: 767px) 64px, (max-width: 1023px) 80px, 96px"
                     className="h-16 w-16 md:h-20 md:w-20 lg:w-24 lg:h-24 shrink-0 rounded-full object-cover"
                   />
                   <div className="min-w-0">
@@ -175,6 +184,6 @@ export default function BpoTestimonial1({
           </div>
         )}
       </div>
-    </section>
+    </ScrollReveal>
   );
 }

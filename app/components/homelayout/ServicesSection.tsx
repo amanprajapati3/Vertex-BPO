@@ -1,6 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { site, type BpoServicesData, type SectionProps } from "@/data";
+import ScrollReveal from "../shared/ScrollReveal";
 
 type BpoServicesProps = SectionProps<BpoServicesData> & {
   /** Show every service (services page) instead of the home-page count. */
@@ -21,7 +23,12 @@ export default function BpoServices1({
     : services.services.slice(0, services.homeVisibleCount);
 
   return (
-    <section className={`py-8 md:py-12 mt-8 md:mt-12 ${light ? "bg-white" : "bg-black"} ${className}`}>
+    <ScrollReveal
+      as="section"
+      direction="up"
+      distance={32}
+      className={`py-8 md:py-12 mt-8 md:mt-12 ${light ? "bg-white" : "bg-black"} ${className}`}
+    >
       <div className="mx-auto w-full max-w-[1320px] px-4 sm:px-6">
         {/* Heading */}
         <div className="text-center">
@@ -36,16 +43,24 @@ export default function BpoServices1({
 
         {/* Cards: 1 col mobile, 2 tablet, 4 desktop */}
         <ul className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:mt-12 lg:grid-cols-4">
-          {items.map((service) => (
-            <li key={service.id}>
+          {items.map((service, index) => (
+            <ScrollReveal
+              as="li"
+              key={service.id}
+              index={index}
+              staggerChildren={0.08}
+              delay={0.1}
+              distance={40}
+            >
               <Link
                 href={service.button.href}
                 className="group relative block aspect-[4/4.2] overflow-hidden rounded-md bg-neutral-900 sm:aspect-[4/4.6]"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={service.image}
                   alt={service.title}
+                  fill
+                  sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
@@ -59,7 +74,7 @@ export default function BpoServices1({
                   </span>
                 </div>
               </Link>
-            </li>
+            </ScrollReveal>
           ))}
         </ul>
 
@@ -75,6 +90,6 @@ export default function BpoServices1({
           </div>
         )}
       </div>
-    </section>
+    </ScrollReveal>
   );
 }

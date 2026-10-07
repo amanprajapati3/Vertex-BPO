@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Check, Phone, Play } from "lucide-react";
 import { site, type BpoAboutData, type SectionProps } from "@/data";
+import ScrollReveal from "../shared/ScrollReveal";
 import BpoVideoModal from "./BpoVideoModel";
 
 export default function BpoAbout1({
@@ -15,14 +17,28 @@ export default function BpoAbout1({
   const [videoOpen, setVideoOpen] = useState(false);
 
   return (
-    <section className={`bg-white pt-8 md:pt-12 ${className}`}>
+    <>
+    <ScrollReveal
+      as="section"
+      direction="up"
+      distance={32}
+      className={`bg-white pt-8 md:pt-12 ${className}`}
+    >
       <div className="mx-auto  grid w-full max-w-[1320px]  gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-14">
         {/* Image + play button */}
-        <div className="relative order-2 overflow-hidden rounded-md lg:order-1">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <ScrollReveal
+          as="div"
+          direction="right"
+          distance={32}
+          mobileDirection="up"
+          className="relative order-2 overflow-hidden rounded-md lg:order-1"
+        >
+          <Image
             src={about.image.src}
             alt={about.image.alt}
+            width={1200}
+            height={900}
+            sizes="(max-width: 1023px) 100vw, 50vw"
             className="aspect-[4/3] w-full object-cover sm:aspect-[16/11] lg:aspect-[4/3.4]"
           />
           <button
@@ -33,10 +49,16 @@ export default function BpoAbout1({
           >
             <Play className="ml-1 h-6 w-6 fill-[#E10600] text-[#E10600] sm:h-7 sm:w-7" aria-hidden />
           </button>
-        </div>
+        </ScrollReveal>
 
         {/* Content */}
-        <div className="order-1 lg:order-2">
+        <ScrollReveal
+          as="div"
+          direction="left"
+          distance={32}
+          mobileDirection="up"
+          className="order-1 lg:order-2"
+        >
           <p className="text-[12px]  font-semibold uppercase tracking-wide text-[#E10600] sm:text-[17px]">
             {about.badge}
           </p>
@@ -89,10 +111,11 @@ export default function BpoAbout1({
               </span>
             </a>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
+    </ScrollReveal>
 
-      <BpoVideoModal open={videoOpen} url={about.videoUrl} onClose={() => setVideoOpen(false)} />
-    </section>
+    <BpoVideoModal open={videoOpen} url={about.videoUrl} onClose={() => setVideoOpen(false)} />
+    </>
   );
 }

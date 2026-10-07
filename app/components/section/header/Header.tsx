@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowRight, ChevronDown, ChevronRight, Menu, X } from "lucide-react";
 import {
@@ -70,10 +71,12 @@ export default function BpoHeader1({
 
   const logo = (
     <Link href="/" className="flex shrink-0 items-center" onClick={closeMenu}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={header.site.logo.normal}
         alt={header.site.logo.alt}
+        width={778}
+        height={212}
+        sizes="300px"
         className="h-16 w-auto sm:h-14 md:h-20"
       />
     </Link>

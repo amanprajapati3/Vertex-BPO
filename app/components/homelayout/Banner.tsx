@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Play } from "lucide-react";
 import { site, type BpoBannerData, type SectionProps } from "@/data";
+import ScrollReveal from "../shared/ScrollReveal";
 import BpoVideoModal from "./BpoVideoModel";
 
 export default function BpoBanner1({
@@ -17,14 +19,19 @@ export default function BpoBanner1({
   const video = banner.buttons.find((b) => b.variant === "outline");
 
   return (
-    <section
+    <>
+    <ScrollReveal
+      as="section"
+      direction="up"
+      distance={40}
       className={`relative isolate flex min-h-[520px] items-center overflow-hidden bg-black sm:min-h-[580px] lg:min-h-[680px] ${className}`}
     >
       {/* Background image */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={banner.image.src}
         alt={banner.image.alt}
+        fill
+        sizes="100vw"
         className="absolute inset-0 -z-20 h-full w-full object-center object-[72%_center] sm:object-[65%_center]"
       />
       {/* Readability overlay */}
@@ -75,13 +82,13 @@ export default function BpoBanner1({
           </div>
         </div>
       </div>
-      <div className="z-30">
-        <BpoVideoModal
-          open={videoOpen}
-          url={banner.videoUrl}
-          onClose={() => setVideoOpen(false)}
-        />
-      </div>
-    </section>
+    </ScrollReveal>
+
+    <BpoVideoModal
+      open={videoOpen}
+      url={banner.videoUrl}
+      onClose={() => setVideoOpen(false)}
+    />
+    </>
   );
 }

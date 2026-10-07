@@ -2,8 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Award, Check, PhoneCall, Users, type LucideIcon } from "lucide-react";
 import { site, type BpoWorkData, type SectionProps } from "@/data";
+import ScrollReveal from "../shared/ScrollReveal";
 
 const statIcons: Record<string, LucideIcon> = {
   award: Award,
@@ -91,7 +93,7 @@ export default function BpoChoose1({
     <section ref={sectionRef} className={`bg-white pt-8 md:pt-12 ${className}`}>
       <div className="mx-auto grid w-full max-w-[1300px]  gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.05fr] lg:gap-14">
         {/* Content */}
-        <div>
+        <ScrollReveal as="div" direction="right" distance={32} mobileDirection="up">
           <p className="flex items-center gap-2 text-[12px] sm:text-[16px] font-bold uppercase tracking-wide text-[#E10600]">
             <Users className="h-5 sm:w-8 sm:h-8 lg:w-10 lg:h-10 w-5" aria-hidden />
             {choose.badge}
@@ -142,14 +144,22 @@ export default function BpoChoose1({
               );
             })}
           </ul>
-        </div>
+        </ScrollReveal>
 
         {/* Image + floating card */}
-        <div className="relative pb-10 sm:pb-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <ScrollReveal
+          as="div"
+          direction="left"
+          distance={32}
+          mobileDirection="up"
+          className="relative pb-10 sm:pb-0"
+        >
+          <Image
             src={choose.image.src}
             alt={choose.image.alt}
+            width={1200}
+            height={900}
+            sizes="(max-width: 1023px) 100vw, 50vw"
             className="aspect-[4/3.6] w-full rounded-md object-cover sm:aspect-[4/3.3] lg:aspect-[4/3.5]"
           />
 
@@ -165,7 +175,7 @@ export default function BpoChoose1({
               <ArrowRight className="h-6 w-6" aria-hidden />
             </Link>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );
