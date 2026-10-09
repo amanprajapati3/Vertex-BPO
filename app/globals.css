@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import "lenis/dist/lenis.css";
 
+/* Single global font family used across the entire site. */
+@theme inline {
+  --font-sans: var(--font-geist), sans-serif;
+}
+
 /* Page banner slanted cut — desktop only.
    Image edge runs from top center (50%) inward to 36% at the bottom;
    the cream panel mirrors the same diagonal so the two meet exactly. */

@@ -90,8 +90,9 @@ export default function BlogDetail({
                       src={page.inlineImage}
                       alt="A virtual assistant managing a busy workday"
                       fill
+                      loading="eager"
                       sizes="(max-width: 767px) 100vw, 65vw"
-                      className="object-cover"
+                      className="object-center"
                     />
                   </div>
                 )}
@@ -132,6 +133,7 @@ export default function BlogDetail({
                           src={recent.image}
                           alt=""
                           fill
+                          loading="eager"
                           sizes="64px"
                           className="object-cover"
                         />

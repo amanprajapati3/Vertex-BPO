@@ -77,6 +77,7 @@ export default function BpoHeader1({
         width={778}
         height={212}
         sizes="300px"
+        loading="eager"
         className="h-16 w-auto sm:h-14 md:h-20"
       />
     </Link>

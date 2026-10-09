@@ -27,7 +27,7 @@ export default function BpoServices1({
       as="section"
       direction="up"
       distance={32}
-      className={`py-8 md:py-12 mt-8 md:mt-12 ${light ? "bg-white" : "bg-black"} ${className}`}
+      className={`py-8 md:py-12  ${light ? "bg-white" : "bg-black"} ${className}`}
     >
       <div className="mx-auto w-full max-w-[1320px] px-4 sm:px-6">
         {/* Heading */}
@@ -60,6 +60,7 @@ export default function BpoServices1({
                   src={service.image}
                   alt={service.title}
                   fill
+                  loading={showAll ? "eager" : "lazy"}
                   sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />

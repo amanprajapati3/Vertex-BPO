@@ -38,6 +38,7 @@ export default function BpoAbout1({
             alt={about.image.alt}
             width={1200}
             height={900}
+            loading="eager"
             sizes="(max-width: 1023px) 100vw, 50vw"
             className="aspect-[4/3] w-full object-cover sm:aspect-[16/11] lg:aspect-[4/3.4]"
           />

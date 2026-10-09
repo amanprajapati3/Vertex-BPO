@@ -82,6 +82,7 @@ export default function BpoBlog1({
                   alt={post.title}
                   width={1600}
                   height={1000}
+                  loading={showAll ? "eager" : "lazy"}
                   sizes="(max-width: 1023px) 100vw, 25vw"
                   className="aspect-[16/10] rounded-xl h-full w-full object-cover transition-transform duration-500 hover:scale-105 sm:aspect-auto "
                 />

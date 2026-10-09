@@ -39,6 +39,7 @@ export default function PageBanner({
           src={data.bgImage}
           alt={`${data.title}${data.highlightedTitle ? ` ${data.highlightedTitle}` : ""}`}
           fill
+          loading="eager"
           sizes="100vw"
           className={`h-full w-full object-cover ${
             compact ? "object-top" : "object-center"

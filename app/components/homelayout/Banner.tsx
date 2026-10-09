@@ -24,13 +24,14 @@ export default function BpoBanner1({
       as="section"
       direction="up"
       distance={40}
-      className={`relative isolate flex min-h-[520px] items-center overflow-hidden bg-black sm:min-h-[580px] lg:min-h-[680px] ${className}`}
+      className={`relative isolate flex min-h-[520px] items-center overflow-hidden bg-black sm:min-h-[540px] ${className}`}
     >
       {/* Background image */}
       <Image
         src={banner.image.src}
         alt={banner.image.alt}
         fill
+        loading="eager"
         sizes="100vw"
         className="absolute inset-0 -z-20 h-full w-full object-center object-[72%_center] sm:object-[65%_center]"
       />

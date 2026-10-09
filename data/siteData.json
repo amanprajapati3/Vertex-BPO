@@ -84,10 +84,10 @@
       "Topbar": {
         "variants": {
           "BpoTopbar1": {
-            "phone": "+1 (123) 456 789",
-            "phoneHref": "tel:+1 (123) 456 789",
-            "email": "info@example.com",
-            "emailHref": "mailto:info@example.com",
+            "phone": "+1 00000000",
+            "phoneHref": "tel:+1 00000000",
+            "email": "info@xyz.com",
+            "emailHref": "mailto:info@xyz.com",
             "socialLinks": [
               { "label": "facebook", "href": "https://www.facebook.com/" },
               { "label": "instagram", "href": "https://www.instagram.com/" },
@@ -131,41 +131,7 @@
               { "label": "About Us", "href": "/about" },
               {
                 "label": "Services",
-                "href": "/services",
-                "children": [
-                  {
-                    "label": "Inbound Call Support",
-                    "href": "/services/inbound-call-support"
-                  },
-                  {
-                    "label": "Outbound Call Support",
-                    "href": "/services/outbound-call-support"
-                  },
-                  {
-                    "label": "Live Chat Support",
-                    "href": "/services/live-chat-support"
-                  },
-                  {
-                    "label": "Technical Support",
-                    "href": "/services/technical-support"
-                  },
-                  {
-                    "label": "Customer Service",
-                    "href": "/services/customer-service"
-                  },
-                  {
-                    "label": "Lead Generation",
-                    "href": "/services/lead-generation"
-                  },
-                  {
-                    "label": "Virtual Assistance",
-                    "href": "/services/virtual-assistance"
-                  },
-                  {
-                    "label": "Back Office Support",
-                    "href": "/services/back-office-support"
-                  }
-                ]
+                "href": "/services"
               },
               { "label": "Blog", "href": "/blog" },
               { "label": "FAQ", "href": "/faq" },
@@ -268,8 +234,8 @@
             },
             "phoneBlock": {
               "label": "Call Us On:",
-              "phone": "+1 (123) 456 789",
-              "phoneHref": "tel:+1 (123) 456 789"
+              "phone": "+1 00000000",
+              "phoneHref": "tel:+1 00000000"
             }
           }
         }
@@ -1002,7 +968,7 @@
                 "current": "Blog Details",
                 "bgImage": "/bpo/bpo11.jpg"
               },
-              "inlineImage": "/bpo/bpo3.jpg",
+              "inlineImage": "/bpo/bpo1.jpg",
               "sidebar": {
                 "searchTitle": "Search Blog",
                 "searchPlaceholder": "Search articles, tips, or topics...",
@@ -1474,15 +1440,15 @@
                 {
                   "id": 1,
                   "title": "Call Us",
-                  "info": "+1 (123) 456 789",
-                  "subInfo": "+1 (123) 456 789",
+                  "info": "+1 00000000",
+                  "subInfo": "+1 00000000",
                   "icon": "Phone"
                 },
                 {
                   "id": 2,
                   "title": "Email Us",
-                  "info": "info@example.com",
-                  "subInfo": "info@example.com",
+                  "info": "info@xyz.com",
+                  "subInfo": "info@xyz.com",
                   "icon": "Mail"
                 },
                 {
@@ -1624,15 +1590,15 @@
                   "id": 1,
                   "icon": "Phone",
                   "label": "Call Us",
-                  "value": "+1 (123) 456 789",
-                  "href": "tel:+1 (123) 456 789"
+                  "value": "+1 00000000",
+                  "href": "tel:+1 00000000"
                 },
                 {
                   "id": 2,
                   "icon": "Mail",
                   "label": "Email Us",
-                  "value": "info@example.com",
-                  "href": "mailto:info@example.com"
+                  "value": "info@xyz.com",
+                  "href": "mailto:info@xyz.com"
                 }
               ]
             }
@@ -1697,8 +1663,8 @@
             "contact": {
               "title": "Contact Us",
               "description": "Questions about these terms? Write to us and we will reply within one business day.",
-              "email": "info@example.com",
-              "phone": "+1 (123) 456 789"
+              "email": "info@xyz.com",
+              "phone": "+1 00000000"
             }
           },
           "BpoPrivacy1": {
@@ -1746,8 +1712,8 @@
             "contact": {
               "title": "Contact Us",
               "description": "To access, correct or delete your data, or to raise a privacy concern, contact our team.",
-              "email": "info@example.com",
-              "phone": "+1 (123) 456 789"
+              "email": "info@xyz.com",
+              "phone": "+1 00000000"
             }
           },
           "BpoRefund1": {
@@ -1790,8 +1756,8 @@
             "contact": {
               "title": "Contact Us",
               "description": "To raise a refund request or ask about an existing one, write to us and we will respond within one business day.",
-              "email": "info@example.com",
-              "phone": "+1 (123) 456 789"
+              "email": "info@xyz.com",
+              "phone": "+1 00000000"
             }
           }
         }
@@ -1876,20 +1842,20 @@
                 {
                   "icon": "phone",
                   "lines": [
-                    { "text": "+1 (123) 456 789", "href": "tel:+1(123) 456 789" },
-                    { "text": "+1 (123) 456 799", "href": "tel:+1(123) 456 799" }
+                    { "text": "+1 00000000", "href": "tel:+1 00000000" },
+                    { "text": "+1 000000000", "href": "tel:+1 000000000" }
                   ]
                 },
                 {
                   "icon": "mail",
                   "lines": [
                     {
-                      "text": "info@vertexbpo.com",
-                      "href": "mailto:info@vertexbpo.com"
+                      "text": "info@xyz.com",
+                      "href": "mailto:info@xyz.com"
                     },
                     {
-                      "text": "support@vertexbpo.com",
-                      "href": "mailto:support@vertexbpo.com"
+                      "text": "info@abc.com",
+                      "href": "mailto:info@abc.com"
                     }
                   ]
                 }

@@ -211,7 +211,7 @@ export default function Quote({
           </div>
 
           {/* CTA banner with contact info over the image */}
-          <ScrollReveal
+          {/* <ScrollReveal
             as="div"
             direction="up"
             distance={40}
@@ -268,7 +268,7 @@ export default function Quote({
                 })}
               </ul>
             </div>
-          </ScrollReveal>
+          </ScrollReveal> */}
         </div>
       </ScrollReveal>
     </>

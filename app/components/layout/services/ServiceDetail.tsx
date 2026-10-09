@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle2, ChevronRight } from "lucide-react";
 import PageBanner from "../../shared/PageBanner";
 import ScrollReveal from "../../shared/ScrollReveal";
 import { site, type BpoServiceDetail, type BpoServiceItem } from "@/data";
+import { useRef } from "react";
 
 export default function ServiceDetail({
   service,
@@ -15,11 +17,18 @@ export default function ServiceDetail({
   const page = site.serviceDetailPage;
   const { sidebar, content } = page;
 
+  const formRef = useRef<HTMLFormElement>(null);
+
   return (
     <>
       <PageBanner data={page.banner} compact />
 
-      <ScrollReveal as="main" direction="up" distance={32} className="bg-white py-8 md:py-12">
+      <ScrollReveal
+        as="main"
+        direction="up"
+        distance={32}
+        className="bg-white py-8 md:py-12"
+      >
         <div className="mx-auto grid w-full max-w-[1320px] grid-cols-1 gap-6 px-4 sm:px-8 md:grid-cols-[minmax(0,2.6fr)_minmax(180px,1fr)] md:gap-[18px]">
           <ScrollReveal
             as="article"
@@ -89,6 +98,7 @@ export default function ServiceDetail({
                 src={content.secondaryImage}
                 alt="Our support team working together"
                 fill
+                loading="eager"
                 sizes="(max-width: 767px) 100vw, 65vw"
                 className="object-cover"
               />
@@ -158,7 +168,15 @@ export default function ServiceDetail({
                 {sidebar.callbackTitle}
               </h2>
 
-              <form action="/quote" method="get" className="mt-3 space-y-2">
+              <form
+                ref={formRef}
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  formRef.current?.reset();
+                  window.location.reload();
+                }}
+                className="mt-3 space-y-2"
+              >
                 {sidebar.callbackFields.map((field) => (
                   <input
                     key={field.name}

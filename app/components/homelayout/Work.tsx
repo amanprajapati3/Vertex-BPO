@@ -90,8 +90,8 @@ export default function BpoChoose1({
   }, []);
 
   return (
-    <section ref={sectionRef} className={`bg-white pt-8 md:pt-12 ${className}`}>
-      <div className="mx-auto grid w-full max-w-[1300px]  gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.05fr] lg:gap-14">
+    <section ref={sectionRef} className={`bg-white overflow-x-clip pt-8 md:pt-12 ${className}`}>
+      <div className="mx-auto grid w-full max-w-[1320px]  gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.05fr] lg:gap-14">
         {/* Content */}
         <ScrollReveal as="div" direction="right" distance={32} mobileDirection="up">
           <p className="flex items-center gap-2 text-[12px] sm:text-[16px] font-bold uppercase tracking-wide text-[#E10600]">
